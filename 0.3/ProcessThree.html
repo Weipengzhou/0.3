@@ -1,0 +1,501 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <title>公装无忧</title>
+    <meta name="description" content=""/>
+    <meta name="format-detection" content="telephone=no">
+    <!--<meta name="renderer" content="webkit">-->
+    <link rel="shortcut icon" href="http://www.51ddo.com/assets/images/9900.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <!--<link rel="stylesheet" type="text/css" href="css/animate.min.css" >-->
+    <link rel="stylesheet" type="text/css" href="css/header.css" >
+    <link rel="stylesheet" type="text/css" href="css/footer.css" >
+    <link rel="stylesheet" type="text/css" href="css/Process.css">
+    <script src="http://libs.baidu.com/jquery/1.4.4/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/zzsc.js"></script>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="container">
+            <div class="nav-l"><a href="index.html"></a> </div>
+            <div class="nav-r">
+                <div class="le">
+                    <ul>
+                        <li><a href="">实时报价</a> </li>
+                        <li><a href="">设计顾问</a> </li>
+                        <li><a href="map_building.html">施工分布</a> </li>
+                    </ul>
+                </div>
+                <div class="ri">
+                    <a onclick="zc()">注册</a>
+                    <a onclick="dl()">登录</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--注册-->
+    <div class="register">
+        <div class="modal-backdrop " onclick="gb()">
+
+        </div>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h2></h2>
+                <p>注册</p>
+                <form method="post" onsubmit="check()">
+                    <div class="abc">
+                        <label>手机号：</label><input type="text" placeholder="请输入手机号" id="Mobile" class="form-control">
+
+                    </div>
+                    <div class="abc sj">
+                        <label>验证码：</label><input type="text" placeholder="请输入验证码" id="Msg" class="form-control">
+                        <input id="btnSendCode" type="button" value="获取验证码" onclick="sendMessage()">
+                        <i class="false"></i>
+                    </div>
+                    <div class="abc">
+                        <label>密码：</label><input type="text" placeholder="请输入密码" id="Password" class="form-control">
+
+                    </div>
+                    <div class="abc">
+                        <label>密码确认：</label><input type="text" placeholder="确认密码" id="Repeat" class="form-control">
+
+                    </div>
+                    <div class="abc">
+                        <input class="form-btn" type="button" value="确认注册">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-login">
+            <div class="modal-content">
+                <h2></h2>
+                <p>登录</p>
+                <div class="abc">
+                    <label>用户名:</label><input type="text" placeholder="请输入密码"  class="form-control">
+
+                </div>
+                <div class="abc">
+                    <label>密码：</label><input type="text" placeholder="确认密码"  class="form-control">
+
+                </div>
+                <div class="abc">
+                    <a href="">忘记密码？</a>
+                    <input class="form-btn" type="button" value="登录">
+                </div>
+            </div>
+        </div>
+        <div class="success">
+            <div class="modal-content">
+                <h2></h2>
+                <h3>恭喜您，注册成功 !</h3>
+                <span></span>
+                <a>点击立刻领取399元/㎡快装套餐</a>
+                <i>24小时上门量房  18天工期保障  36小时后期维护</i>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="three clearfix">
+    <div class="container">
+        <div class="title">
+            <ul>
+                <li class="g">
+                    <em></em>
+                    <a href="ProcessOne.html">基本信息</a>
+                </li>
+                <li class="g">
+                    <em></em>
+                    <a href="ProcessTwo.html">功能区需求</a>
+                </li>
+                <li class="g">
+                    <a href="ProcessThree.html">基础硬装报价</a>
+                </li>
+            </ul>
+        </div>
+        <h2>基础硬装报价单<span>（以上价格为含税价，最终将根据项目实际情况有所增减，幅度将在10%以内）</span></h2>
+        <div class="left">
+            <p>基础资料</p>
+            <p>功能区面积</p>
+            <p>其他</p>
+            <p>施工材料</p>
+            <p>初步预算</p>
+        </div>
+        <div class="right">
+            <ul class="jichu">
+                <li>建筑面积  400㎡</li>
+                <li>实际装修面积  350㎡</li>
+                <li>员工人数  40人</li>
+            </ul>
+            <ul class="mianji">
+                <li>总经理办公室</li>
+                <li>主管办公室</li>
+                <li>独立办公室</li>
+                <li>接待室</li>
+                <li>茶水间</li>
+                <li>前厅</li>
+                <li>储物间</li>
+                <li>会议室</li>
+                <li>敞开办公区</li>
+            </ul>
+            <div class="about">
+                <ul>
+                    <li>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                        <div>
+                            <!--1<b></b>--><p>24㎡</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <b>123</b><p>24㎡</p>
+                        </div>
+                        <div>
+                            <b>1</b><p>24㎡</p>
+                        </div>
+                        <div>
+                            <b>1</b><p>24㎡</p>
+                        </div>
+                        <div>
+                            <b>1</b><p>24㎡</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <b>1</b><p>24㎡</p>
+                        </div>
+                        <div>
+                            <b>1</b><p>24㎡</p>
+                        </div>
+                        <div>
+                            <b>1</b><p>24㎡</p>
+                        </div>
+                        <div>
+                            <b>1</b><p>24㎡</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="another">
+                <div>
+                    <div class="top">
+                        <!--1<b></b>--><p>24㎡</p>
+
+                    </div>
+                    <h4>总经理办公室</h4>
+                </div>
+                <div>
+                    <div class="top">
+                        <!--1<b></b>--><p>24㎡</p>
+
+                    </div>
+                    <h4>总经理办公室</h4>
+                </div>
+                <div>
+                    <div class="top">
+                        <!--1<b></b>--><p>24㎡</p>
+
+                    </div>
+                    <h4>总经理办公室</h4>
+                </div>
+                <div>
+                    <div class="top">
+                        <!--1<b></b>--><p>24㎡</p>
+
+                    </div>
+                    <h4>总经理办公室</h4>
+                </div>
+            </div>
+            <ul class="cailiao">
+                <li>
+                    <p>矿棉板</p>
+                    <img src="img/c-1.jpg" alt="矿棉板">
+                </li>
+                <li>
+                    <p>电线</p>
+                    <img src="img/c-2.jpg" alt="电线">
+                </li>
+                <li>
+                    <p>墙面漆</p>
+                    <img src="img/c-3.jpg" alt="墙面漆">
+                </li>
+                <li>
+                    <p>照明</p>
+                    <img src="img/c-4.jpg" alt="照明">
+                </li>
+                <li>
+                    <p>石膏板</p>
+                    <img src="img/c-5.jpg" alt="石膏板">
+                </li>
+                <li>
+                    <p>开关插座</p>
+                    <img src="img/c-6.jpg" alt="开关插座">
+                </li>
+                <li>
+                    <p>玻璃高隔</p>
+                    <img src="img/c-7.jpg" alt="玻璃高隔">
+                </li>
+            </ul>
+            <div class="bj">
+                <div class="le">
+                    <h3>预计工期</h3>
+                    <h2>12工作日</h2>
+                    <p>初步预算</p>
+                    <p>实际情况根据现场</p>
+                </div>
+                <div class="ri">
+                    <h3>初步报价</h3>
+                    <h2>¥ 100.000元</h2>
+                    <p>以上价格为含税价，</p>
+                    <p>最终将根据项目实际情况有所增减，幅度将在10%以内</p>
+                </div>
+            </div>
+            <div class="but">
+                <p class="ts">返回上一步会清空此设置 <span></span></p>
+            <a href="ProcessTwo.html" class="le">上一步</a>
+              <a href="ProcessSuccess.html"  class="ri">下一步</a>
+            </div>
+            <a href="ProcessFour.html" class="hq">获取更详细报价 ></a>
+        </div>
+    </div>
+
+</section>
+
+<!--底部-->
+<footer>
+    <div class="container">
+        <div class="footer-t">
+            <!--<ul class="clearfix">-->
+            <!--<li>-->
+            <!--<i>399/㎡</i>-->
+            <!--<p>全网超低软装</p>-->
+            <!--&lt;!&ndash;<span>报价透明，绝不加价，全程报价清晰透明</span>&ndash;&gt;-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<i>18天</i>-->
+            <!--<p>工期超一赔千</p>-->
+            <!--&lt;!&ndash;<span>400平以下18天工期保证，超过1天赔1000元，每天累计</span>&ndash;&gt;-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<i>100%</i>-->
+            <!--<p>正品施工材料</p>-->
+            <!--&lt;!&ndash;<span>健康环保装修，100％正品施工材料，建材软装E1级达标。</span>&ndash;&gt;-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<i>2年</i>-->
+            <!--<p>质保终身维保</p>-->
+            <!--&lt;!&ndash;<span>装修前后有保障，为装修品质保驾护航，两年质保终身维保！</span>&ndash;&gt;-->
+            <!--</li>-->
+            <!--</ul>-->
+            <div class="help-banner">
+                <div class="list-help">
+                    <div class="left">
+                        <div class="left-icon">
+                                     <span>
+
+                                     </span>
+                        </div>
+                        <div class="left">
+                            <p class="title">
+                                售前咨询
+                            </p>
+                            <p class="desc">
+                                400-7676-399
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-text">
+
+                        <div class="right">
+
+                            <p class="list">
+
+                                全方位的装潢咨询
+                            </p>
+
+                            <p class="list">
+
+                                精准的配置推荐
+                            </p>
+
+                            <p class="list">
+
+                                灵活的价格方案
+                            </p>
+
+                            <p class="list">
+
+                                1对1贴心服务
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-b">
+            <div class="top clearfix">
+                <ul>
+                    <li>
+                        <h2>关于我们</h2>
+                        <ul>
+                            <li><a href="http://www.51ddo.com/gzwy/3.0/about.html">关于我们</a> </li>
+                            <li><a href="">我们的服务</a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>网站帮助</h2>
+                        <ul>
+                            <li><a href="">常见问题</a> </li>
+                            <li><a href="http://p.qiao.baidu.com/cps/chat?siteId=7970219&userId=18045185" target="_blank">在线客服</a> </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>联系我们</h2>
+                        <ul>
+                            <li><p>地址:</p><span>上海市徐汇区虹梅路2071号远中产业园四期1号楼2515室<br/>上海市奉贤区西渡扶港路900号（总部）</span> </li>
+                            <li>全国热线: 400-7676-399</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>微信公众号</h2>
+                        <i><img src="img/dingyue_icon.jpg"> </i>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <!--<a href="http://www.guolinfloor.com/">地板加盟</a>|-->
+                <!--<a href="http://www.misonyigui.com/">定制衣柜加盟</a>|-->
+                <!--<a href="http://www.sxwqaz.com ">办公家具安装</a>|-->
+                <!--<a href="http://www.huijieanju.com/">上海装修公司</a>|-->
+                <!--<a href="http://www.magic998.com">无锡装修公司</a>|-->
+                <!--<a href="http://www.yooen.com">铝合金门窗厂</a>|-->
+                <!--<a href="http://www.haitai888.cn">深圳装修公司</a>|-->
+
+                <!--<a href="http://sh.pangwo.com">上海信息网</a>|-->
+                <!--<a href="http://www.yzlou.com">一周楼市网</a>|-->
+                <!--<a href="http://www.lakerstime.com.cn">北京阳光房</a>|-->
+                <!--<a href="http://wx.lezh.cn">无锡装修</a>|-->
+                <!--<a href="http://www.91hive.com ">石家庄装修</a>|-->
+                <!--<a href="http://taizhouu.365azw.com/">泰州装修网</a>|-->
+
+
+                <!--<a href="http://jiancai.7wsh.com/">建材网</a>|-->
+                <!--<a href="http://www.xincanzs.com/">成都房屋装修</a>|-->
+                <!--<a href="http://jiafang.jc001.cn/">家纺网</a>|-->
+
+                <!--<a href="http://www.w20.com.cn/  ">花园家具</a>|-->
+                <!--<a href="http://qh.168zhuang.com">琼海装修网</a>|-->
+                <!--<a href="http://www.zxhwzm.com/ ">广东庭院灯厂家</a>|-->
+                <!--<a href="http://hz.mingdiao.com.cn/">惠州装修</a>|-->
+                <!--<a href="http://www.ejuhome.com/">意大利家具</a>|-->
+                <!--<a href="http://cd.dayehome.com">成都别墅装修公司</a>|-->
+                <!--<a href="http://www.mfj85.com/">美缝剂</a>|-->
+
+
+                <p class="copyright">
+                    Copyright © 2015-2016, 51ddo, All Rights Reserved沪ICP备15035347
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

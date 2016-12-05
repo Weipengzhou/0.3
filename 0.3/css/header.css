@@ -1,0 +1,551 @@
+body {
+  width: 100%;
+  min-width: 1200px;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  min-width: 1170px;
+  position: relative;
+}
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #ebebeb;
+}
+header .container .nav-l {
+  width: 350px;
+  height: 100px;
+  background: url("../img/logo.png") no-repeat;
+  float: left;
+}
+header .container .nav-l a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+header .container .nav-r {
+  width: 820px;
+  height: 100px;
+  float: left;
+}
+header .container .nav-r .ri {
+  width: 100px;
+  height: 100%;
+  float: right;
+}
+header .container .nav-r .ri a {
+  line-height: 100px;
+  padding: 10px;
+  width: 100px;
+  display: inline;
+  border-radius: 10px;
+  color: #FFF;
+  box-shadow: 2px 3px  #b5e0d4;
+  font-size: 14px;
+  background: -ms-linear-gradient(top, #25f8be, #05cc96);
+  /* IE 10 */
+  background: -moz-linear-gradient(top, #25f8be, #05cc96);
+  /*火狐*/
+  /*谷歌*/
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#25f8be), to(#05cc96));
+  /* Safari 4-5, Chrome 1-9*/
+  background: -webkit-linear-gradient(top, #25f8be, #05cc96);
+  /*Safari5.1 Chrome 10+*/
+  background: -o-linear-gradient(top, #25f8be, #05cc96);
+  /*Opera 11.10+*/
+}
+header .container .nav-r .le {
+  width: 720px;
+  float: left;
+  height: 100px;
+}
+header .container .nav-r .le ul {
+  width: 720px;
+  height: 100px;
+  float: right;
+  line-height: 100px;
+}
+header .container .nav-r .le ul li {
+  width: 240px;
+  height: 36px;
+  float: left;
+  display: inline;
+  text-align: center;
+}
+header .container .nav-r .le ul li a {
+  font-size: 20px;
+  color: #020202;
+  padding: 3px 0 5px 0;
+}
+header .container .nav-r .le ul li a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #05cb8c;
+}
+.slider {
+  width: 100%;
+}
+.slider img {
+  width: 100%;
+  height: 100%;
+}
+.right-nav {
+  width: 38px;
+  position: fixed;
+  right: 5px;
+  top: 40%;
+  z-index: 999;
+}
+.right-nav .scroll {
+  display: none;
+}
+.right-nav > ul > li {
+  width: 40px;
+  height: 40px;
+  margin: 3px 0 3px 0;
+  background-color: #f3f2f2;
+  cursor: pointer;
+  position: relative;
+}
+.right-nav > ul > li:hover {
+  background-color: #1ff4ba;
+}
+.right-nav > ul > li:nth-child(1) > span {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: url("../img/icon.png") -103px -165px;
+}
+.right-nav > ul > li:nth-child(1) > span a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.right-nav > ul > li:nth-child(2) > span {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: url("../img/icon.png") -33px -168px;
+}
+.right-nav > ul > li:nth-child(3) > span {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: url("../img/icon.png") -238px -164px;
+}
+.right-nav > ul > li:nth-child(4) > span {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: url("../img/icon.png") -170px -165px;
+}
+.right-nav > ul > li:nth-child(1) > span:hover {
+  background: url("../img/icon.png") -103px -202px;
+}
+.right-nav > ul > li:nth-child(2) > span:hover {
+  background: url("../img/icon.png") -33px -205px;
+}
+.right-nav > ul > li:nth-child(3) > span:hover {
+  background: url("../img/icon.png") -238px -205px;
+}
+.right-nav > ul > li:nth-child(4) > span:hover {
+  background: url("../img/icon.png") -170px -202px;
+}
+.right-nav > ul > li:nth-child(3) img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  right: 41px;
+  top: -86px;
+  display: none;
+}
+.right-nav > ul > li:nth-child(3):hover img {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  display: block;
+}
+.right-nav .show-tel {
+  position: absolute;
+  top: 0;
+  right: 44px;
+  display: none;
+  z-index: 19;
+}
+.right-nav .show-tel .tel-hover-panel {
+  width: 360px;
+  height: 205px;
+  background: #fff;
+  border: 1px solid #c5d8db;
+  padding: 0 20px;
+  border-top: 5px solid #00da8b;
+  -webkit-box-shadow: 0 0 7.5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 7.5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 7.5px rgba(0, 0, 0, 0.15);
+}
+.right-nav .show-tel .top-area {
+  position: relative;
+  width: 100%;
+  padding: 25px 0;
+  border-bottom: .5px solid #DEDEDE;
+}
+.right-nav .show-tel .top-left-icon {
+  margin-left: 53px;
+  width: 50px;
+  float: left;
+  padding-top: 10px;
+}
+.right-nav .show-tel .top-left-icon img {
+  width: 100%;
+  height: 100%;
+}
+.right-nav .show-tel .top-right-text {
+  padding-left: 127px;
+  height: 54px;
+  color: #373D41;
+}
+.right-nav .show-tel .desc {
+  font-size: 14px!important;
+  line-height: 22px;
+  margin-bottom: 4px;
+}
+.right-nav .show-tel .phone {
+  font-size: 18px!important;
+  line-height: 28px;
+  color: #FF8A00;
+}
+.right-nav .show-tel .bottom-area {
+  width: 100%;
+}
+.right-nav .show-tel .bottom-li {
+  padding: 20px;
+}
+.right-nav .show-tel .bottom-li li {
+  float: left;
+  width: 50%;
+  list-style: circle;
+  color: #A9B0B4;
+  font-size: 14px!important;
+  line-height: 24px;
+  height: 24px;
+  list-style-position: inside;
+  margin-bottom: 5px;
+}
+.register {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+}
+.register .modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear;
+  transition: opacity .15s linear;
+}
+.register .modal-login {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  width: 600px;
+  position: absolute;
+  top: 60%;
+  left: 47.4%;
+  margin-top: -250px;
+  margin-left: -250px;
+  /*此时宽和高都要固定*/
+  height: 450px;
+  z-index: 1002;
+  display: none;
+}
+.register .modal-login .modal-content {
+  position: relative;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  width: 450px;
+  height: 420px;
+  padding: 15px 75px;
+  text-align: center;
+}
+.register .modal-login .modal-content h2 {
+  width: 125px;
+  height: 38px;
+  background: url("../img/gzwy.png") no-repeat;
+  display: inline-block;
+  margin-top: 50px;
+}
+.register .modal-login .modal-content p {
+  font-size: 20px;
+  color: #05cb8c;
+  padding-bottom: 30px;
+}
+.register .modal-login .modal-content .abc {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.register .modal-login .modal-content .abc label {
+  width: 100px;
+  display: inline-block;
+  float: left ;
+  text-align: center;
+}
+.register .modal-login .modal-content .abc input:focus {
+  border: 1px solid #05cb8c;
+}
+.register .modal-login .modal-content .abc i {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+.register .modal-login .modal-content .abc .true {
+  background: url("../img/true.png") 7px 3px no-repeat;
+}
+.register .modal-login .modal-content .abc .false {
+  background: url("../img/true.png") -37px 4px no-repeat;
+}
+.register .modal-login .modal-content .abc .form-control {
+  width: 280px;
+  display: inline-block;
+  float: left ;
+  height: 30px;
+  color: #999;
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+}
+.register .modal-login .modal-content .abc .form-btn {
+  color: #fff;
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 10px;
+  height: 45px;
+  width: 120px;
+  border: 1px solid #e0e0e0;
+  vertical-align: middle;
+  background-color: #05cb8c;
+  float: right;
+  margin-right: 55px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.register .modal-login .modal-content .abc a {
+  text-decoration: none;
+  color: #05cb8c;
+}
+.register .modal-login .modal-content .abc .form-btn:hover {
+  background-color: #0aa379;
+}
+.register .modal-login .modal-content .sj .form-control {
+  width: 120px;
+}
+.register .modal-login .modal-content .sj #btnSendCode {
+  width: 155px;
+  margin-left: 5px;
+  border: 1px solid #05cb8c;
+  float: left;
+  height: 42px;
+  display: inline-block;
+  color: #05cb8c;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #FFF;
+}
+.register .modal-dialog {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  width: 600px;
+  position: absolute;
+  top: 60%;
+  left: 47.4%;
+  margin-top: -250px;
+  margin-left: -250px;
+  /*此时宽和高都要固定*/
+  height: 450px;
+  z-index: 1002;
+  display: none;
+}
+.register .modal-dialog .modal-content {
+  position: relative;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  width: 450px;
+  height: 420px;
+  padding: 15px 75px ;
+  text-align: center;
+}
+.register .modal-dialog .modal-content h2 {
+  width: 125px;
+  height: 38px;
+  background: url("../img/gzwy.png") no-repeat;
+  display: inline-block;
+}
+.register .modal-dialog .modal-content p {
+  font-size: 20px;
+  color: #05cb8c;
+  padding-bottom: 30px;
+}
+.register .modal-dialog .modal-content .abc {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.register .modal-dialog .modal-content .abc label {
+  width: 100px;
+  display: inline-block;
+  float: left ;
+  text-align: right;
+}
+.register .modal-dialog .modal-content .abc input:focus {
+  border: 1px solid #05cb8c;
+}
+.register .modal-dialog .modal-content .abc i {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+.register .modal-dialog .modal-content .abc .true {
+  background: url("../img/true.png") 7px 3px no-repeat;
+}
+.register .modal-dialog .modal-content .abc .false {
+  background: url("../img/true.png") -37px 4px no-repeat;
+}
+.register .modal-dialog .modal-content .abc .form-control {
+  width: 280px;
+  display: inline-block;
+  float: left ;
+  height: 30px;
+  color: #999;
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+}
+.register .modal-dialog .modal-content .abc .form-btn {
+  color: #fff;
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 10px;
+  height: 45px;
+  width: 120px;
+  border: 1px solid #e0e0e0;
+  vertical-align: middle;
+  background-color: #05cb8c;
+  float: right;
+  margin-right: 55px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.register .modal-dialog .modal-content .abc .form-btn:hover {
+  background-color: #0aa379;
+}
+.register .modal-dialog .modal-content .sj .form-control {
+  width: 120px;
+}
+.register .modal-dialog .modal-content .sj #btnSendCode {
+  width: 155px;
+  margin-left: 5px;
+  border: 1px solid #05cb8c;
+  float: left;
+  height: 42px;
+  display: inline-block;
+  color: #05cb8c;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #FFF;
+}
+.register .success {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  width: 600px;
+  position: absolute;
+  top: 60%;
+  left: 47.4%;
+  margin-top: -250px;
+  margin-left: -250px;
+  /*此时宽和高都要固定*/
+  height: 450px;
+  z-index: 1002;
+  display: none;
+}
+.register .success .modal-content {
+  position: relative;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  width: 450px;
+  height: 420px;
+  padding: 15px 75px;
+  text-align: center;
+}
+.register .success .modal-content h2 {
+  width: 175px;
+  height: 175px;
+  background: url("../img/success.png") no-repeat;
+  display: inline-block;
+  margin-top: 30px;
+}
+.register .success .modal-content h3 {
+  font-size: 25px;
+  font-weight: 300;
+  color: #000;
+}
+.register .success .modal-content span {
+  height: 1px;
+  width: 100%;
+  background-color: #ebebeb;
+  display: inline-block;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.register .success .modal-content a {
+  font-size: 16px;
+  color: #05cb8c;
+  width: 315px;
+  height: 35px;
+  border: 1px solid #05cb8c;
+  line-height: 35px;
+  display: inline-block;
+}
+.register .success .modal-content i {
+  display: inline-block;
+  font-style: normal;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #737473;
+}

@@ -1,0 +1,113 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <title>公装无忧</title>
+    <meta name="description" content=""/>
+    <meta name="format-detection" content="telephone=no">
+    <!--<meta name="renderer" content="webkit">-->
+    <link rel="shortcut icon" href="http://www.51ddo.com/assets/images/9900.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/MakeAbout.css">
+    <script src="http://libs.baidu.com/jquery/1.4.4/jquery.min.js"></script>
+
+
+
+</head>
+<body>
+<header>
+    <div class="left">
+        <a href="index.html">
+            <img src="img/logo.png">
+        </a>
+    </div>
+    <div class="right">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="">全部案例</a></li>
+            <li><a href="">众创空间</a></li>
+            <li class="on"><a href="">连锁店</a></li>
+        </ul>
+        <form action="" method="post">
+            <input type="text" name="numberId" class="form-control" placeholder="请填写合同号">
+            <button type="submit" class="btn"></button>
+        </form>
+    </div>
+</header>
+
+    <section>
+        <div class="top">
+            <div class="remind">
+                <b>X</b>
+                <h2>小技巧</h2>
+                <p>使用鼠标滚轮来滚动浏览，效果最佳.</p>
+            </div>
+        </div>
+        <div class="center">
+            <ul class="inner mw_slide_inner"  id="slideBox" >
+                <li class="one">
+                    <div class="one-top">
+                        <h2>cocospace</h2>
+                        <p>公司简单介绍设计师对自然与科技，人与环境，
+
+                            功能与形态加以如此美妙的诠释，使办公空间设
+
+                            计简化为环境的艺术，让工作者感到自己责任的
+
+                            同时，得以尽情释放。</p>
+                    </div>
+                    <div class="one-bottom">
+                        <img src="img/demoimg.png">
+                        <p>项目名称：COCOSPACE可可空间</p>
+                        <p>建筑面积：400㎡</p>
+                        <p>企业类型：众创空间</p>
+                        <p>项目地址：上海市徐汇区漕河泾开发区远中产业园2楼</p>
+                        <p>优惠价格：1000元/月/人</p>
+                        <p>联系方式：12345678901  刘先生</p>
+                    </div>
+                </li>
+                <li class="two">
+                    <img src="img/shejitu.jpg" alt="">
+                    <p>平面图</p>
+                </li>
+                <li class="three">
+                    <h2>连锁店</h2>
+                    <img src="img/qianting1.jpg" alt="">
+                </li>
+                <li class="four">
+                    <h2>连锁店</h2>
+                    <img src="img/qianting1.jpg" alt="">
+                    <div>
+                        <div class="ba">
+                            <span></span><h3>THE END</h3><span></span>
+                            <p>众创空间介绍设计师对自然与科技，人与环境，
+
+                                功能与形态加以如此美妙的诠释，使办公空间设
+
+                                计简化为环境的艺术，让工作者感到自己责任的
+
+                                同时，得以尽情释放。</p>
+                            <h5>原价：1000元/月/人</h5>
+                            <h5>公装无忧优惠价：1000元/月/人</h5>
+                            <h5>联系方式：12345678901  刘先生</h5>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+<script src="js/sea.js"></script>
+<script>
+    var a = function(id) {
+        return document.getElementById(id);
+    };
+    seajs.use("slide.js", function(slide) {
+        slide.init(a("slideBox"));
+    });
+    $('.remind b').live('click',function(){
+        $('.remind').hide()
+    })
+</script>
+</body>
+</html>

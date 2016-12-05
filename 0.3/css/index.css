@@ -1,0 +1,856 @@
+section {
+  width: 100%;
+}
+section .menu {
+  width: 100%;
+  height: 120px;
+  background-color: #e2e2e2;
+}
+section .menu ul {
+  width: 100%;
+  height: 120px;
+  position: relative;
+}
+section .menu ul li {
+  width: 20%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+section .menu ul li a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+section .menu ul li i {
+  width: 60px;
+  height: 50px;
+  display: inline-block;
+  margin-top: 20px;
+}
+section .menu ul li span {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #020202;
+  transition: transform 1s linear 1s;
+}
+section .menu ul li:hover {
+  animation: myfirst 1s;
+  -moz-animation: myfirst 1s;
+  /* Firefox */
+  -webkit-animation: myfirst 1s;
+  /* Safari 和 Chrome */
+  -o-animation: myfirst 1s;
+  /* Opera */
+  top: 30px;
+}
+@keyframes myfirst {
+  from {
+    top: 0;
+  }
+  to {
+    top: 30px;
+  }
+}
+section .menu ul li:nth-child(odd) {
+  background-color: #ebebeb;
+}
+section .menu ul li:nth-child(even) {
+  background-color: #e2e2e2;
+}
+section .menu ul li:nth-child(1) i {
+  background: url("../img/icon.png") -22px -18px;
+}
+section .menu ul li:nth-child(2) i {
+  background: url("../img/icon.png") -205px -18px;
+}
+section .menu ul li:nth-child(3) i {
+  background: url("../img/icon.png") -405px -18px;
+}
+section .menu ul li:nth-child(4) i {
+  background: url("../img/icon.png") -615px -18px;
+}
+section .menu ul li:nth-child(5) i {
+  background: url("../img/icon.png") -802px -18px;
+}
+section .menu ul li:nth-child(1):hover i {
+  background: url("../img/icon.png") -22px -80px;
+}
+section .menu ul li:nth-child(2):hover i {
+  background: url("../img/icon.png") -205px -80px;
+}
+section .menu ul li:nth-child(3):hover i {
+  background: url("../img/icon.png") -405px -80px;
+}
+section .menu ul li:nth-child(4):hover i {
+  background: url("../img/icon.png") -615px -80px;
+}
+section .menu ul li:nth-child(5):hover i {
+  background: url("../img/icon.png") -802px -80px;
+}
+section .package {
+  width: 100%;
+}
+section .package .t-99 {
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+section .package .t-99 h2 {
+  font-size: 50px;
+  height: 55px;
+  line-height: 55px;
+  color: #020202;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+section .package .t-99 .t-l,
+section .package .t-99 .t-r {
+  width: 50%;
+  float: left;
+  height: 600px;
+}
+section .package .t-99 .t-l h3 {
+  height: 45px;
+  line-height: 45px;
+  color: #05cb8c;
+  font-size: 44px;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 35px;
+}
+section .package .t-99 .t-l .pad {
+  padding-left: 15px;
+}
+section .package .t-99 .t-l .mr {
+  margin-top: 65px;
+}
+section .package .t-99 .t-l a {
+  display: block;
+  width: 240px;
+  height: 60px;
+  margin-top: 80px;
+  border-radius: 20px;
+  line-height: 60px;
+  font-size: 18px;
+  color: #FFF;
+  background: -ms-linear-gradient(top, #24f8be, #05cc96);
+  /* IE 10 */
+  background: -moz-linear-gradient(top, #24f8be, #05cc96);
+  /*火狐*/
+  /*谷歌*/
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#24f8be), to(#05cc96));
+  /* Safari 4-5, Chrome 1-9*/
+  background: -webkit-linear-gradient(top, #24f8be, #05cc96);
+  /*Safari5.1 Chrome 10+*/
+  background: -o-linear-gradient(top, #24f8be, #05cc96);
+  /*Opera 11.10+*/
+}
+section .package .t-99 .t-l p {
+  color: #737473;
+  font-size: 17px;
+  width: 100%;
+  text-align: left;
+}
+section .package .t-99 .t-l p b {
+  font-size: 20px;
+  padding: 0 5px 5px 0;
+}
+section .package .t-99 .t-r {
+  position: relative;
+}
+section .package .t-99 .t-r .button {
+  width: 420px;
+  height: 135px;
+  margin-top: 100px;
+  float: right;
+  border-radius: 80px;
+  cursor: pointer;
+  box-shadow: 3px 5px 5px #92e8d1;
+  background: -ms-linear-gradient(top, #24f8be, #05cc96);
+  /* IE 10 */
+  background: -moz-linear-gradient(top, #24f8be, #05cc96);
+  /*火狐*/
+  /*谷歌*/
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#24f8be), to(#05cc96));
+  /* Safari 4-5, Chrome 1-9*/
+  background: -webkit-linear-gradient(top, #24f8be, #05cc96);
+  /*Safari5.1 Chrome 10+*/
+  background: -o-linear-gradient(top, #24f8be, #05cc96);
+  /*Opera 11.10+*/
+}
+section .package .t-99 .t-r .button i {
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  background: url("../img/icon.png") -405px -246px;
+  float: left;
+  margin: 30px 10px 20px 60px;
+}
+section .package .t-99 .t-r .button span {
+  width: 205px;
+  height: 135px;
+  line-height: 135px;
+  float: left;
+  font-size: 50px;
+  font-weight: 300;
+  color: #FFF;
+}
+section .package .t-99 .t-r .more {
+  position: absolute;
+  right: 0;
+  bottom: 75px;
+}
+section .package .t-99 .t-r .more a {
+  font-size: 17px;
+  color: #6b6d6c;
+  line-height: 50px;
+  display: inline-block;
+}
+section .package .t-99 .t-r .more a:hover span,
+section .package .t-99 .t-r .more a:hover b {
+  color: #11dda6;
+}
+section .package .t-99 .t-r .more a span {
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+  float: left;
+}
+section .package .t-99 .t-r .more a b {
+  display: inline-block;
+  font-size: 30px;
+  padding-left: 10px;
+}
+section .build {
+  width: 100%;
+  height: 640px;
+  background: url("../img/build.jpg") center center no-repeat;
+}
+section .build .build-t {
+  height: 206px;
+  width: 100%;
+}
+section .build .build-t h2 {
+  font-size: 50px;
+  font-weight: 200;
+  color: #fff;
+  text-align: center;
+}
+section .build .build-t p {
+  font-size: 16px;
+  color: #FFF;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: 300;
+}
+section .build .build-t form {
+  width: 710px;
+  height: 60px;
+  margin: 0 auto;
+  position: relative;
+}
+section .build .build-t .form-control {
+  width: 100%;
+  height: 40px;
+  border-radius: 30px;
+  background: none;
+  border: 3px solid #FFF;
+  color: #FFF;
+  text-indent: 3em;
+  font-size: 20px;
+}
+section .build .build-t input::-webkit-input-placeholder {
+  font-size: 20px;
+  color: #FFF;
+}
+section .build .build-t .btn {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/icon.png") -427px -364px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+section .build .build-t a {
+  display: inline-block;
+  text-align: center;
+  color: #05cb95;
+  width: 100%;
+}
+section .build .build-b {
+  height: 334px;
+  width: 100%;
+  background-color: rgba(247, 247, 247, 0.3);
+}
+section .build .build-b .dw {
+  width: 130px;
+  height: 50px;
+  padding-top: 25px;
+  margin: 0 auto;
+}
+section .build .build-b .dw span {
+  width: 40px;
+  height: 40px;
+  background: url("../img/icon.png") -440px -175px;
+  display: inline-block;
+  float: left;
+}
+section .build .build-b .dw h2 {
+  display: inline-block;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #FFF;
+}
+section .build .build-b p {
+  width: 100%;
+  height: 26px;
+}
+section .build .build-b p i {
+  width: 515px;
+  height: 1px;
+  display: inline-block;
+  float: left;
+  margin-top: 9px;
+}
+section .build .build-b p i.l {
+  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0), #ffffff);
+  /* IE 10 */
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0), #ffffff);
+  /*火狐*/
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #ffffff);
+  /*Safari5.1 Chrome 10+*/
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0), #ffffff);
+  /*Opera 11.10+*/
+}
+section .build .build-b p i.r {
+  background: -ms-linear-gradient(right, rgba(255, 255, 255, 0), #ffffff);
+  /* IE 10 */
+  background: -moz-linear-gradient(right, rgba(255, 255, 255, 0), #ffffff);
+  /*火狐*/
+  background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0), #ffffff);
+  /*Safari5.1 Chrome 10+*/
+  background: -o-linear-gradient(right, rgba(255, 255, 255, 0), #ffffff);
+  /*Opera 11.10+*/
+}
+section .build .build-b p span {
+  color: #FFF;
+  display: inline-block;
+  float: left;
+  width: 140px;
+  text-align: center;
+  font-size: 14px;
+}
+section .build .build-b ul {
+  width: 100%;
+  height: 180px;
+}
+section .build .build-b ul li {
+  width: 25%;
+  float: left;
+  height: 100%;
+  text-align: center;
+}
+section .build .build-b ul li p {
+  font-size: 80px;
+  font-weight: 400;
+  height: auto;
+  color: #10eaae;
+  font-family: MFJinHei;
+}
+section .build .build-b ul li span {
+  margin-top: 50px;
+  display: inline-block;
+  color: #FFF;
+}
+section .build .build-b ul li span b {
+  color: #24f8be;
+  font-weight: 600;
+  font-size: 14px;
+}
+section .build .more {
+  margin-top: 45px;
+  float: right;
+}
+section .build .more a {
+  color: #FFF;
+  font-size: 17px;
+}
+section .build .more b {
+  padding-left: 10px;
+}
+section .build .more a:hover {
+  color: #05cb8c;
+}
+section .designer {
+  width: 100%;
+  height: 980px;
+  background: url("../img/designer.jpg") center center;
+}
+section .designer .designer-t {
+  width: 100%;
+  height: 210px;
+  text-align: center;
+}
+section .designer .designer-t h2 {
+  font-size: 50px;
+  color: #787878;
+  text-align: center;
+  font-weight: 300;
+  padding-top: 110px;
+}
+section .designer .designer-t span {
+  width: 125px;
+  height: 3px;
+  background-color: #05cb95;
+  display: inline-block;
+}
+section .designer .designer-t p {
+  font-size: 20px;
+  color: #737473;
+  text-align: center;
+  font-weight: 300;
+}
+section .designer .designer-b {
+  margin-top: 110px;
+  width: 100%;
+  overflow: hidden;
+  padding: 4px;
+}
+section .designer .designer-b .card-area {
+  width: 1200px;
+}
+section .designer .designer-b .card-area li:nth-child(1) .col-t {
+  background-color: #ebebeb;
+}
+section .designer .designer-b .card-area li:nth-child(1) .col-t span {
+  background: url("../img/icon.png") -38px -300px;
+}
+section .designer .designer-b .card-area li:nth-child(3) .col-t {
+  background-color: #e2e2e2;
+}
+section .designer .designer-b .card-area li:nth-child(3) .col-t span {
+  background: url("../img/icon.png") -123px -300px;
+}
+section .designer .designer-b .card-area li:nth-child(2) .col-t {
+  background-color: #ebebeb;
+}
+section .designer .designer-b .card-area li:nth-child(2) .col-t span {
+  background: url("../img/icon.png") -204px -300px;
+}
+section .designer .designer-b .card-area li:nth-child(4) .col-t {
+  background-color: #e2e2e2;
+}
+section .designer .designer-b .card-area li:nth-child(4) .col-t span {
+  background: url("../img/icon.png") -275px -300px;
+}
+section .designer .designer-b .card-area li:nth-child(5) .col-t {
+  background-color: #ebebeb;
+}
+section .designer .designer-b .card-area li:nth-child(5) .col-t span {
+  background: url("../img/icon.png") -350px -300px;
+}
+section .designer .designer-b .card-area li:nth-child(1).active .col-t span {
+  background: url("../img/icon.png") -38px -385px;
+}
+section .designer .designer-b .card-area li:nth-child(3).active .col-t span {
+  background: url("../img/icon.png") -123px -385px;
+}
+section .designer .designer-b .card-area li:nth-child(2).active .col-t span {
+  background: url("../img/icon.png") -204px -385px;
+}
+section .designer .designer-b .card-area li:nth-child(4).active .col-t span {
+  background: url("../img/icon.png") -275px -385px;
+}
+section .designer .designer-b .card-area li:nth-child(5).active .col-t span {
+  background: url("../img/icon.png") -350px -385px;
+}
+section .designer .designer-b .card-area li {
+  z-index: 10;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1), z-index 0s 0.12s;
+  position: relative;
+  float: left;
+  width: 17.7%;
+  height: 500px;
+  background-color: transparent;
+  border: 1px solid #DBDBDD;
+  margin-top: 20px;
+}
+section .designer .designer-b .card-area li .col-t {
+  width: 100%;
+  text-align: center;
+  height: 175px;
+}
+section .designer .designer-b .card-area li .col-t span {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  margin-top: 35px;
+}
+section .designer .designer-b .card-area li .col-t p {
+  font-size: 18px;
+  margin-top: 15px;
+  font-weight: 600;
+}
+section .designer .designer-b .card-area li .col-b {
+  width: 100%;
+  height: 325px;
+  background-color: #FFF;
+  text-align: center;
+}
+section .designer .designer-b .card-area li .col-b .img {
+  width: 116px;
+  height: 116px;
+  border-radius: 116px;
+  display: inline-block;
+  margin-top: 60px;
+  border: 1px solid #eee;
+}
+section .designer .designer-b .card-area li .col-b .txt {
+  opacity: 0;
+  width: 90%;
+  margin: 0 auto;
+  height: 50px;
+}
+section .designer .designer-b .card-area li .col-b .txt h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+section .designer .designer-b .card-area li .col-b .txt p {
+  font-size: 12px;
+}
+section .designer .designer-b .card-area li .col-b a {
+  color: #878686;
+  font-size: 16px;
+}
+section .designer .designer-b .card-area li .col-b a b {
+  padding-left: 5px;
+}
+section .designer .designer-b .card-area li:hover,
+section .designer .designer-b #card .active {
+  z-index: 100;
+  border: 1px solid #05cb95;
+  box-shadow: 0 0 20px rgba(5, 235, 172, 0.5);
+  width: 26%;
+  height: 538px;
+  margin-top: 0;
+}
+section .designer .designer-b .card-area li:hover .col-t,
+section .designer .designer-b #card .active .col-t {
+  background-color: #05cb95;
+  height: 195px;
+}
+section .designer .designer-b .card-area li:hover .col-t p,
+section .designer .designer-b #card .active .col-t p {
+  color: #FFF;
+}
+section .designer .designer-b .card-area li:hover .col-b,
+section .designer .designer-b #card .active .col-b {
+  height: 345px;
+  -webkit-transition: all 0.12s cubic-bezier(0.4, 0, 0.2, 1) 0.18s;
+  -moz-transition: all 0.12s cubic-bezier(0.4, 0, 0.2, 1) 0.18s;
+  -o-transition: all 0.12s cubic-bezier(0.4, 0, 0.2, 1) 0.18s;
+  transition: all 0.12s cubic-bezier(0.4, 0, 0.2, 1) 0.18s;
+  z-index: 3;
+  opacity: 1;
+}
+section .designer .designer-b .card-area li:hover .col-b .img,
+section .designer .designer-b #card .active .col-b .img {
+  margin-top: 20px;
+}
+section .designer .designer-b .card-area li:hover .col-b .txt,
+section .designer .designer-b #card .active .col-b .txt {
+  opacity: 1;
+  height: 130px;
+}
+section .designer .designer-b .card-area li:hover .col-b .txt h2,
+section .designer .designer-b #card .active .col-b .txt h2 {
+  margin-top: 20px;
+}
+section .designer .designer-b .card-area li:hover .col-b .txt p,
+section .designer .designer-b #card .active .col-b .txt p {
+  margin-top: 15px;
+}
+section .designer .designer-b .card-area li:hover .col-b a,
+section .designer .designer-b #card .active .col-b a {
+  color: #05cb8c;
+  font-size: 19px;
+}
+section .designer .designer-b .card-area li:hover .col-b a b,
+section .designer .designer-b #card .active .col-b a b {
+  padding-left: 5px;
+}
+section .news {
+  width: 100%;
+}
+section .news .news-t {
+  width: 100%;
+  height: 600px;
+  text-align: center;
+}
+section .news .news-t h2 {
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 35px;
+}
+section .news .news-t > span {
+  width: 125px;
+  height: 3px;
+  background-color: #05cb8c;
+  display: inline-block;
+}
+section .news .news-t > p {
+  font-size: 20px;
+  color: #737473;
+  padding-top: 20px;
+  padding-bottom: 55px;
+  font-weight: 300;
+}
+section .news .news-t > a {
+  float: right;
+  margin-top: 70px;
+}
+section .news .news-t > a span {
+  font-size: 16px;
+  color: #000;
+}
+section .news .news-t > a:hover {
+  text-decoration: none;
+}
+section .news .news-t > a:hover span,
+section .news .news-t > a:hover b {
+  color: #05cb8c;
+  text-decoration: none;
+}
+section .news .news-t > a b {
+  padding-left: 10px;
+  font-size: 20px;
+  color: #000000;
+}
+section .news .news-t .y-row {
+  width: 100%;
+  max-width: 1200px;
+}
+section .news .news-t .y-row .news-txt {
+  width: 370px;
+  height: 230px;
+  float: left;
+  padding: 0 10px 0 10px;
+}
+section .news .news-t .y-row .news-txt a {
+  text-decoration: none;
+}
+section .news .news-t .y-row .news-txt a:hover {
+  box-shadow: 0 0 15px rgba(186, 204, 207, 0.7);
+}
+section .news .news-t .y-row .news-txt .item-box {
+  width: 100%;
+  height: 230px;
+  border: 1px solid #c5d8db;
+}
+section .news .news-t .y-row .news-txt .item-box:hover {
+  box-shadow: 0 0 15px rgba(186, 204, 207, 0.7);
+}
+section .news .news-t .y-row .news-txt .item-box .img-area {
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+}
+section .news .news-t .y-row .news-txt .item-box .img-area img {
+  width: 100%;
+  webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+section .news .news-t .y-row .news-txt .item-box .img-area img:hover {
+  webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+section .news .news-t .y-row .news-txt .item-box .box-header {
+  padding: 18px 25px;
+  font-size: 14px;
+  color: #373d41;
+}
+section .news .news-b {
+  width: 100%;
+  height: 780px;
+  text-align: center;
+  background: url("../img/news.png") center 0 no-repeat;
+}
+section .news .news-b h2 {
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 85px;
+}
+section .news .news-b > span {
+  width: 125px;
+  height: 3px;
+  background-color: #05cb8c;
+  display: inline-block;
+}
+section .news .news-b > p {
+  font-size: 20px;
+  color: #737473;
+  padding-top: 15px;
+  padding-bottom: 55px;
+  font-weight: 300;
+}
+section .news .news-b .left {
+  width: 635px;
+  height: 386px;
+  margin-left: 50px;
+  float: left;
+  margin-top: 30px;
+}
+section .news .news-b .left iframe {
+  border: 1px solid #a6a6a6;
+}
+section .news .news-b .right {
+  width: 485px;
+  float: left ;
+  margin-top: 35px;
+}
+section .news .news-b .right > div {
+  width: 100%;
+}
+section .news .news-b .right span {
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  background-color: #9d9d9d;
+  border-radius: 7px;
+  margin-top: 25px;
+}
+section .news .news-b .right h5 {
+  display: inline-block;
+  font-size: 18px;
+  color: #162f31;
+  text-align: left;
+  width: 360px;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+section .news .news-b .right p {
+  padding-left: 70px;
+  color: #494949;
+  font-size: 12px;
+  text-align: left;
+  padding-top: 10px;
+}
+section .friend {
+  width: 100%;
+  height: 680px;
+  text-align: center;
+  background-color: #f5f5f7;
+  position: relative;
+}
+section .friend .container {
+  height: 100%;
+}
+section .friend h2 {
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 55px;
+}
+section .friend .module-title {
+  position: absolute;
+  right: 20px;
+  bottom: 50px;
+}
+section .friend .next a {
+  float: right;
+  margin-top: 70px;
+}
+section .friend .next a span {
+  font-size: 16px;
+  color: #000;
+}
+section .friend .next a b {
+  padding-left: 10px;
+  font-size: 18px;
+  color: #000000;
+}
+section .friend .next a:hover {
+  text-decoration: none;
+}
+section .friend .next a:hover span,
+section .friend .next a:hover b {
+  color: #05cb8c;
+  text-decoration: none;
+}
+section .friend .container > span {
+  width: 125px;
+  height: 3px;
+  background-color: #05cb8c;
+  display: inline-block;
+}
+section .friend p {
+  font-size: 20px;
+  color: #737473;
+  padding-top: 15px;
+  padding-bottom: 55px;
+  font-weight: 300;
+}
+section .friend .inner {
+  width: 100%;
+}
+section .friend .inner ul li {
+  width: 272px;
+  height: 320px;
+  padding: 10px;
+  overflow: hidden;
+  float: left;
+}
+section .friend .inner ul li > a {
+  width: 100%;
+  height: 48%;
+  display: inline-block;
+  background-color: #FFF;
+  margin-bottom: 5px;
+  border: 1px solid #EEE;
+}
+section .new-banner h2 {
+  font-size: 40px;
+  color: #FFF;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 40px;
+}
+section .new-banner a {
+  width: 135px;
+  height: 50px;
+  display: inline-block;
+  border: 2px solid #FFF;
+  line-height: 50px;
+  border-radius: 30px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #FFF;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+section .new-banner {
+  position: relative;
+  text-align: center;
+  background: url("../img/zhuce.png");
+  background-size: cover;
+  background-color: #00da8b;
+}

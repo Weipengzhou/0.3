@@ -1,0 +1,368 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <title>公装无忧</title>
+    <meta name="description" content=""/>
+    <meta name="format-detection" content="telephone=no">
+    <!--<meta name="renderer" content="webkit">-->
+    <link rel="shortcut icon" href="http://www.51ddo.com/assets/images/9900.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <link rel="stylesheet" type="text/css" href="css/header.css" >
+    <link rel="stylesheet" type="text/css" href="css/footer.css" >
+    <link rel="stylesheet" type="text/css" href="css/news.css">
+    <script src="http://libs.baidu.com/jquery/1.4.4/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/zzsc.js"></script>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="container">
+            <div class="nav-l"></div>
+            <div class="nav-r">
+                <div class="le">
+                    <ul>
+                        <li><a href="">实时报价</a> </li>
+                        <li><a href="">设计服务</a> </li>
+                        <li><a href="">施工分布</a> </li>
+                    </ul>
+                </div>
+                <div class="ri">
+                    <a onclick="zc()">vip快速注册</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--banner-->
+
+<div class="slider">
+    <ul>
+        <li><a href=""> <img src="img/banner.jpg"></a> </li>
+    </ul>
+</div>
+<!--右侧导航栏-->
+
+<div class="right-nav clearfix">
+    <ul>
+        <li>
+                    <span>
+
+                    </span>
+
+        </li>
+        <li>
+            <span class="phone"></span>
+            <div class="show-tel">
+                <div class="tel-hover-panel">
+                    <div class="top-area">
+                        <div class="top-left-icon">
+                            <img src="img/tel-b.png"  alt="">
+                        </div>
+                        <div class="top-right-text">
+                            <p class="desc">
+                                售前咨询电话
+                            </p>
+                            <p class="phone">
+                                <span >400-7676-399</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bottom-area">
+                        <ul class="bottom-li">
+
+                            <li>
+                                <!--
+                                <a href="" target="_blank">全方位的购买咨询</a> -->
+                                <p>
+                                    全方位的购买咨询
+                                </p>
+                            </li>
+
+                            <li>
+                                <!--
+                                <a href="" target="_blank">精准的配置推荐</a> -->
+                                <p>
+                                    精准的配置推荐
+                                </p>
+                            </li>
+
+                            <li>
+                                <!--
+                                <a href="" target="_blank">灵活的价格方案</a> -->
+                                <p>
+                                    灵活的价格方案
+                                </p>
+                            </li>
+
+                            <li>
+                                <!--
+                                <a href="" target="_blank">1对1贴心服务</a> -->
+                                <p>
+                                    1对1贴心服务
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <span></span>
+            <img src="img/dingyue_icon.jpg">
+        </li>
+        <li  class="scroll" id="scroll">
+            <span></span>
+        </li>
+    </ul>
+</div>
+
+
+
+<!--注册-->
+
+<div class="register">
+    <div class="modal-backdrop " onclick="gb()">
+
+    </div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <h2></h2>
+            <p>注册</p>
+            <form method="post" onsubmit="check()">
+                <div class="abc">
+                    <label>手机号：</label><input type="text" placeholder="请输入手机号" id="Mobile" class="form-control">
+
+                </div>
+                <div class="abc sj">
+                    <label>验证码：</label><input type="text" placeholder="请输入验证码" id="Msg" class="form-control">
+                    <input id="btnSendCode" type="button" value="获取验证码" onclick="sendMessage()">
+                    <i class="false"></i>
+                </div>
+                <div class="abc">
+                    <label>密码：</label><input type="text" placeholder="请输入密码" id="Password" class="form-control">
+
+                </div>
+                <div class="abc">
+                    <label>密码确认：</label><input type="text" placeholder="确认密码" id="Repeat" class="form-control">
+
+                </div>
+                <div class="abc">
+                    <input class="form-btn" type="submit" value="确认注册">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="success">
+        <div class="modal-content">
+            <h2></h2>
+            <h3>恭喜您，注册成功 !</h3>
+            <span></span>
+            <a>点击立刻领取399元/㎡快装套餐</a>
+            <i>24小时上门量房  18天工期保障  36小时后期维护</i>
+        </div>
+    </div>
+</div>
+
+<section>
+    <div class="container clearfix">
+        <div class="nav">
+            <ul>
+                <li class="on"><a href="">行业新闻</a> </li>
+                <li><a href="">最新活动</a> </li>
+                <li><a href="">优惠活动</a> </li>
+                <li><a href="">微信活动</a> </li>
+                <li><a href="">办公室风水</a> </li>
+            </ul>
+        </div>
+        <div class="left">
+           <div class="title">
+                <h2>不忘初心，砥砺前行</h2>
+               <span>2016-09-26  &nbsp;  09:19:40</span>
+           </div>
+            <div class="text">
+               <p>创立初心，无非是对更多创业者的惺惺相惜。 </p>
+                <p>当创业者终于通过不可思议的努力，在这座城市里有了一个让自己造梦的空间，无论它是过小或过大、是毛坯或等待翻新的场地…都是承载梦想、创造未来的地方。很多人说传统办公装修都是玩套路，一纸合同猫腻多，装修个办公室而已，让人心力交瘁。是啊，租金已不菲，创业又艰苦，装修也艰难。往大了说，公装无忧想改变传统公装行业“增项加价、工期拖延、偷工减料”等混乱现状，规范公装市场。而说到底，不过是想给予每一个创业者一个“省心”的装修服务。 一个省心的互联网办公装修，不止全程透明，让客户完全可控，还包括专业完善的服务；环保、过硬的质量……而在实现这些目标的路上，公装无忧一直在前行。 </p>
+                <p>2015年8月8日，公装无忧赞助了在上海举办的意大利超级杯足球赛，为迎接公装无忧平台的即将到来。
+                    2015年8月18日，公装无忧平台正式上线。
+                    2015年8月31日，公装无忧携手马上办公，共同致立于为中小企业提供更便捷的寻找办公室服务，以及提供办公室装修一体化解决方案。
+                    2015年10月30日，公装无忧与新浪家居达成战略合作，新浪家居“办公装修”频道正式上线。一个省心的互联网办公装修，不止全程透明，让客户完全可控，还包括专业、完善的服务；环保、过硬的质量……而在实现这些目标的路上，公装无忧一直在前行。
+                    2015年11月 ，公装无忧联合新浪家居，共同举办了上海“最美行政”评选活动。
+                    2015年12月30日，公装无忧CEO李统铮在“2016中国家居CEO创新峰会”上，成为了唯一一位获得“2015年度中国家居产业新生代掌舵人”称号的公装企业领导。 一个省心的互联网办公装修，不止全程透明，让客户完全可控，还包括专业、完善的服务；环保、过硬的质量而在实现这些目标的路上，公装无忧一直在前行。
+                    2016年2月，公装无忧将“18天环保快装修”理念作为公装无忧装修服务的标准。
+                    2016年4月，公装无忧与国内一流装饰装修品牌舜隆装饰达成战略合作，共同打造最优质办公环境。
+                    2016年5月，公装无忧被上海西渡工业区管理委员会指定为“企业服务中心”，为企业提供一站式办公服务。
+                    2016年6月，公装无忧免费为客户提供《建筑安装工程一切险》、《建筑安装工程污染责任保险》，让客户更放心的进行办公装修。
+                    2016年6月20日，公装无忧耗时35天，完成2300㎡的长阳谷中国电信创业基地装修项目，创造了公装行业的一大奇迹。
+                    2016年6月28日，公装无忧联合柴火网及上海各大知名众创空间（SOHO 3Q、科技50、P2联合创业中心等），共同举办夏季曜能量派发活动，为每个众创空间派发88箱曜能量功能饮料，帮助所有创业者们在炎炎夏日消暑解乏。
+                    2016年7月，公装无忧的队伍进驻苏州、南京、宁波。并将“一站式公装”及“18天环保快装修”理念成功复制到苏州、南京与宁波。
+                    2016年8月，公装无忧联合奉贤团区委组织公益性活动，为各行各界一线岗位的劳动者派送“曜能量”功能饮料，送上夏日关怀、传播正能量2016年8月9日，公装无忧CEO李统铮带着公装无忧项目荣获了“2016滨海青年英才十强”。
+                    ……
+                    一年过去了，从无到有，从有到优。公装无忧所做一切也许不只是为了证明给自己，更是为了证明给所有客户，他们的选择，没有错。 </p>
+            </div>
+        </div>
+        <div class="right clearfix">
+            <h2>行业新闻</h2>
+            <div class="biao"><span></span><h3>热门新闻</h3></div>
+            <div class="name"><a href=""><span></span>新浪家居牵手公装无忧</a> </div>
+            <div class="name"><a href=""><span></span>新浪家居牵手公装无忧</a> </div>
+            <div class="biao" style="border-top:2px solid #ebebeb;margin-top:20px; "><span></span><h3>热度排行</h3></div>
+            <div class="name"><a href=""><span></span>新浪家居牵手公装无忧</a> </div>
+            <div class="name"><a href=""><span></span>新浪家居牵手公装无忧</a> </div>
+            <div class="name"><a href=""><span></span>新浪家居牵手公装无忧</a> </div>
+            <div class="name"><a href=""><span></span>新浪家居牵手公装无忧</a> </div>
+            <div class="name"><a href=""><span></span>新浪家居牵手公装无忧</a> </div>
+            <div class="name"><a href=""><span></span>新浪家居牵手公装无忧</a> </div>
+            <div class="name"><a href=""><span></span>新浪家居牵手公装无忧</a> </div>
+            <div class="name"><a href=""><span></span>新浪家居牵手公装无忧</a> </div>
+            <div class="name"><a href=""><span></span>新浪家居牵手公装无忧</a> </div>
+            <div class="name"><a href=""><span></span>新浪家居牵手公装无忧</a> </div>
+        </div>
+    </div>
+</section>
+<!--底部-->
+<footer>
+    <div class="container">
+        <div class="footer-t">
+            <!--<ul class="clearfix">-->
+            <!--<li>-->
+            <!--<i>399/㎡</i>-->
+            <!--<p>全网超低软装</p>-->
+            <!--&lt;!&ndash;<span>报价透明，绝不加价，全程报价清晰透明</span>&ndash;&gt;-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<i>18天</i>-->
+            <!--<p>工期超一赔千</p>-->
+            <!--&lt;!&ndash;<span>400平以下18天工期保证，超过1天赔1000元，每天累计</span>&ndash;&gt;-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<i>100%</i>-->
+            <!--<p>正品施工材料</p>-->
+            <!--&lt;!&ndash;<span>健康环保装修，100％正品施工材料，建材软装E1级达标。</span>&ndash;&gt;-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<i>2年</i>-->
+            <!--<p>质保终身维保</p>-->
+            <!--&lt;!&ndash;<span>装修前后有保障，为装修品质保驾护航，两年质保终身维保！</span>&ndash;&gt;-->
+            <!--</li>-->
+            <!--</ul>-->
+            <div class="help-banner">
+                <div class="list-help">
+                    <div class="left">
+                        <div class="left-icon">
+                                     <span>
+
+                                     </span>
+                        </div>
+                        <div class="left">
+                            <p class="title">
+                                售前咨询
+                            </p>
+                            <p class="desc">
+                                400-7676-399
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-text">
+
+                        <div class="right">
+
+                            <p class="list">
+
+                                全方位的装潢咨询
+                            </p>
+
+                            <p class="list">
+
+                                精准的配置推荐
+                            </p>
+
+                            <p class="list">
+
+                                灵活的价格方案
+                            </p>
+
+                            <p class="list">
+
+                                1对1贴心服务
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-b">
+            <div class="top clearfix">
+                <ul>
+                    <li>
+                        <h2>关于我们</h2>
+                        <ul>
+                            <li><a href="">关于我们</a> </li>
+                            <li><a href="">我们的服务</a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>网站帮助</h2>
+                        <ul>
+                            <li><a href="">常见问题</a> </li>
+                            <li><a href="">在线客服</a> </li>
+                            <li><a href=""> 在线留言</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>联系我们</h2>
+                        <ul>
+                            <li><p>地址:</p><span>上海市徐汇区虹梅路2071号远中产业园四期1号楼2515室<br/>上海市奉贤区西渡扶港路900号（总部）</span> </li>
+                            <li>全国热线: 400-7676-399</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>微信公众号</h2>
+                        <i><img src="img/dingyue_icon.jpg"> </i>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <!--<a href="http://www.guolinfloor.com/">地板加盟</a>|-->
+                <!--<a href="http://www.misonyigui.com/">定制衣柜加盟</a>|-->
+                <!--<a href="http://www.sxwqaz.com ">办公家具安装</a>|-->
+                <!--<a href="http://www.huijieanju.com/">上海装修公司</a>|-->
+                <!--<a href="http://www.magic998.com">无锡装修公司</a>|-->
+                <!--<a href="http://www.yooen.com">铝合金门窗厂</a>|-->
+                <!--<a href="http://www.haitai888.cn">深圳装修公司</a>|-->
+
+                <!--<a href="http://sh.pangwo.com">上海信息网</a>|-->
+                <!--<a href="http://www.yzlou.com">一周楼市网</a>|-->
+                <!--<a href="http://www.lakerstime.com.cn">北京阳光房</a>|-->
+                <!--<a href="http://wx.lezh.cn">无锡装修</a>|-->
+                <!--<a href="http://www.91hive.com ">石家庄装修</a>|-->
+                <!--<a href="http://taizhouu.365azw.com/">泰州装修网</a>|-->
+
+
+                <!--<a href="http://jiancai.7wsh.com/">建材网</a>|-->
+                <!--<a href="http://www.xincanzs.com/">成都房屋装修</a>|-->
+                <!--<a href="http://jiafang.jc001.cn/">家纺网</a>|-->
+
+                <!--<a href="http://www.w20.com.cn/  ">花园家具</a>|-->
+                <!--<a href="http://qh.168zhuang.com">琼海装修网</a>|-->
+                <!--<a href="http://www.zxhwzm.com/ ">广东庭院灯厂家</a>|-->
+                <!--<a href="http://hz.mingdiao.com.cn/">惠州装修</a>|-->
+                <!--<a href="http://www.ejuhome.com/">意大利家具</a>|-->
+                <!--<a href="http://cd.dayehome.com">成都别墅装修公司</a>|-->
+                <!--<a href="http://www.mfj85.com/">美缝剂</a>|-->
+
+
+                <p class="copyright">
+                    Copyright © 2015-2016, 51ddo, All Rights Reserved沪ICP备15035347
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,576 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <title>公装无忧</title>
+    <meta name="description" content=""/>
+    <meta name="format-detection" content="telephone=no">
+    <!--<meta name="renderer" content="webkit">-->
+    <link rel="shortcut icon" href="http://www.51ddo.com/assets/images/9900.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <link rel="stylesheet" type="text/css" href="css/header.css" >
+    <link rel="stylesheet" type="text/css" href="css/footer.css" >
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <script src="http://libs.baidu.com/jquery/1.4.4/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/zzsc.js"></script>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="container">
+            <div class="nav-l"><a href="index.html"></a> </div>
+            <div class="nav-r">
+                <div class="le">
+                    <ul>
+                        <li><a href="">实时报价</a> </li>
+                        <li><a href="">设计顾问</a> </li>
+                        <li><a href="map_building.html">施工分布</a> </li>
+                    </ul>
+                </div>
+                <div class="ri">
+                    <a onclick="zc()">注册</a>
+                    <a onclick="dl()">登录</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--banner-->
+
+<div class="slider">
+    <ul>
+        <li><a href=""> <img src="img/banner.jpg"></a> </li>
+    </ul>
+</div>
+<!--右侧导航栏-->
+
+<div class="right-nav clearfix">
+    <ul>
+        <li>
+                    <span>
+
+                    </span>
+
+        </li>
+        <li>
+            <span class="phone"></span>
+            <div class="show-tel">
+                <div class="tel-hover-panel">
+                    <div class="top-area">
+                        <div class="top-left-icon">
+                            <img src="img/tel-b.png"  alt="">
+                        </div>
+                        <div class="top-right-text">
+                            <p class="desc">
+                                售前咨询电话
+                            </p>
+                            <p class="phone">
+                                <span >400-7676-399</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bottom-area">
+                        <ul class="bottom-li">
+
+                            <li>
+                                <!--
+                                <a href="" target="_blank">全方位的购买咨询</a> -->
+                                <p>
+                                    全方位的购买咨询
+                                </p>
+                            </li>
+
+                            <li>
+                                <!--
+                                <a href="" target="_blank">精准的配置推荐</a> -->
+                                <p>
+                                    精准的配置推荐
+                                </p>
+                            </li>
+
+                            <li>
+                                <!--
+                                <a href="" target="_blank">灵活的价格方案</a> -->
+                                <p>
+                                    灵活的价格方案
+                                </p>
+                            </li>
+
+                            <li>
+                                <!--
+                                <a href="" target="_blank">1对1贴心服务</a> -->
+                                <p>
+                                    1对1贴心服务
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <span></span>
+            <img src="img/dingyue_icon.jpg">
+        </li>
+        <li  class="scroll" id="scroll">
+            <span></span>
+        </li>
+    </ul>
+</div>
+
+
+
+<!--注册-->
+
+<div class="register">
+    <div class="modal-backdrop " onclick="gb()">
+
+    </div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <h2></h2>
+            <p>注册</p>
+            <form method="post" onsubmit="check()">
+                <div class="abc">
+                    <label>手机号：</label><input type="text" placeholder="请输入手机号" id="Mobile" class="form-control">
+
+                </div>
+                <div class="abc sj">
+                    <label>验证码：</label><input type="text" placeholder="请输入验证码" id="Msg" class="form-control">
+                    <input id="btnSendCode" type="button" value="获取验证码" onclick="sendMessage()">
+                    <i class="false"></i>
+                </div>
+                <div class="abc">
+                    <label>密码：</label><input type="text" placeholder="请输入密码" id="Password" class="form-control">
+
+                </div>
+                <div class="abc">
+                    <label>密码确认：</label><input type="text" placeholder="确认密码" id="Repeat" class="form-control">
+
+                </div>
+                <div class="abc">
+                    <input class="form-btn" type="button" value="确认注册">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="modal-login">
+        <div class="modal-content">
+            <h2></h2>
+            <p>登录</p>
+            <div class="abc">
+                <label>用户名:</label><input type="text" placeholder="请输入密码"  class="form-control">
+
+            </div>
+            <div class="abc">
+                <label>密码：</label><input type="text" placeholder="确认密码"  class="form-control">
+
+            </div>
+            <div class="abc">
+                <a href="">忘记密码？</a>
+                <input class="form-btn" type="button" value="登录">
+            </div>
+        </div>
+    </div>
+    <div class="success">
+        <div class="modal-content">
+            <h2></h2>
+            <h3>恭喜您，注册成功 !</h3>
+            <span></span>
+            <a>点击立刻领取399元/㎡快装套餐</a>
+            <i>24小时上门量房  18天工期保障  36小时后期维护</i>
+        </div>
+    </div>
+</div>
+<section>
+   <div id="tab">
+    <div class="tabList clearfix">
+        <div class="container">
+            <ul>
+                <li class="cur">企业优势</li>
+                <li>企业简介</li>
+                <li>常见问题</li>
+                <li>个性定制</li>
+                <li>施工资质</li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="tabCon clearfix">
+        <div class="one">
+
+                <!--五大优势-->
+                <div class="five">
+                    <div class="container">
+                    <h2>五大优势一站式服务助客户从0到“拎包办公”</h2>
+                    <span></span>
+                    <ul class="clearfix">
+                        <li>
+                           <b>100%</b>
+                            <p>健康环保装修</p>
+                            <span>100％正品施工材料，建材软装E1级达标。</span>
+                        </li>
+                        <li>
+                            <b>0增项</b>
+                            <p>报价透明无增项</p>
+                            <span>全程报价清晰透明，除施工中客户主动额外要求，绝无增项。</span>
+                        </li>
+                        <li>
+                            <b>0中介</b>
+                            <p>在线选材无中介</p>
+                            <span>通过PC端在线选材，主材厂家直购，中间差价直接返利客户。</span>
+                        </li>
+                        <li>
+                            <b>18天</b>
+                            <p>流程公开工期短</p>
+                            <span>400平米，18天工期保证，专人负责进度，超过1天赔1000元。</span>
+                        </li>
+                        <li>
+                            <b>2年</b>
+                            <p>2年质保终身维保</p>
+                            <span>装修前后有保障，为装修品质保驾护航。</span>
+                        </li>
+                        <li>
+                            <b>24H</b>
+                            <p>实时掌控施工情况</p>
+                            <span>施工现场二维码推送，随时线上沟通，线上解决任何施工中的问题。</span>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <!--多地区-->
+                <div class="more">
+                    <div class="container">
+                        <h2>多地区服务满足不同客户的需求</h2>
+                        <span></span>
+                        <ul>
+                            <li> 南京</li>
+                            <li> 苏州</li>
+                            <li> <p>上海</p><span></span></li>
+                            <li> 杭州</li>
+                            <li> 宁波</li>
+                        </ul>
+                        <p>更多城市敬请期待</p>
+                    </div>
+                </div>
+                <!--一站式服务-->
+                <div class="customerService">
+                    <div class="container">
+                        <h2>一站式服务</h2>
+                        <span></span>
+                        <i>从公司注册到IT对接，从装修服务到拆旧服务，让您一键下单，轻松拎包入驻</i>
+                       <div class="cust-img"></div>
+                    </div>
+                </div>
+                <!--互联网+优势-->
+                <div class="int">
+                    <div class="container">
+                        <h2>互联网＋ 优势</h2>
+                        <span></span>
+                        <i>装修全程透明可查，工作职能有据可循，线上线下双重监督，2年质保终生维保</i>
+                       <div class="int-img"></div>
+                    </div>
+                </div>
+                <!--pk-->
+                <div class="pk clearfix">
+                    <div class="container">
+                        <h2>公装无忧PK其他公司平台</h2>
+                        <span></span>
+                        <i>公装无忧互联网小额公装平台，是互联网+小额公装市场的开创者与实践者</i>
+                        <div class="left">
+                           <div class="top">
+                               <span></span>
+                               <p>公装无忧</p>
+                           </div>
+                           <div class="bottom">
+                               <span></span>
+                               <p>其他平台/企业</p>
+                           </div>
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li><h3>价格对比</h3><div class="top"><p>硬装装修 399元/㎡硬装+办公家具666元/㎡</p></div> <div class="bottom"><p>699元/㎡起</p></div> </li>
+                                <li><h3>施工效率</h3><div class="top"><p>18天</p></div> <div class="bottom"><p>25天起</p></div></li>
+                                <li><h3>透明程度</h3><div class="top"><p>完全公开</p></div> <div class="bottom"><p>不透明，赚回扣</p></div></li>
+                                <li><h3>施工管理</h3><div class="top"><p>全程线下线上相结合双重制度监理，团队配合无缝对接，一体化程度高</p></div> <div class="bottom"><p>自行监管</p></div></li>
+                                <li><h3>服务保障</h3><div class="top"><p>口碑营销，坚决执行一年质保 & 终身维保</p></div> <div class="bottom"><p>服务保障落实缺乏动力</p></div></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="one">
+            <div class="container">
+                <h2>公装无忧一站式拎包服务平台</h2>
+                <span></span>
+                <p>上海德渡网络科技有限公司旗下的“公装无忧”，是一个专为创业者提供一站式办公室装修服务的互联网公装平台。专注于研究“18天环保快装修”整体解决方案，帮助创业者一站解决时间紧迫、资金短缺、施工流程难掌控等装修难题。采用严格的监管体系，以及标准的快装流程，比传统装修节约40～60%工期，发挥办公室使用的最大效率。
+
+                    公司拥有一批从英国学成归国的精英管理团队以及高素质的资深设计团队，通过在实践中的不断提升并累积经验，公司业务现已扩张到南京、宁波、苏州等周边城市。公装无忧将不断努力、追求创新，用心为创业者提供更好的装修产品及服务。
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+
+                    公装无忧的使命：缔造创业者的梦想空间。<br/>
+                    公装无忧的理念：18天环保快装修。<br/>
+                    公装无忧的准则：专！快！好！省！<br/>
+                    公装无忧的目标：打造互联网公装第一品牌。<br/>
+                    公装无忧的客户观：为客户省心、省力、省钱是根本。
+
+                </p>
+
+            </div>
+        </div>
+        <div class="one">
+            <div class="container">
+                <h2>常见问题</h2>
+                <span></span>
+                <h4>施工问题</h4>
+                <div><span></span><h3>装修之前需要我们先把物业的相关手续准备齐全吗？</h3></div>
+                <p>公装无忧会指派项目经理直接协助您与物业沟通，并帮助您办理一切施工需要的相关手续。</p>
+                <div><span></span><h3>如何管控项目施工质量？</h3></div>
+                <p>通过专业监理团队对施工现场进行全程质量监控，以及在线直播装修过程信息，让您方便及时地了解并参与质量监控，确保项目施工质量。</p>
+                <div><span></span><h3>公装无忧的装修套餐有质保期吗？</h3></div>
+                <p>公装无忧承诺客户可享受两年有效质保和终身快速维保，质保是指质保期内一切维修工作都由公装无忧负责，贵公司无需任何费用。维保是指质保期后若贵公司部分物件损坏或更换，公装无忧将免费提供上门维修服务。</p>
+                <div><span></span><h3>公装无忧提供哪些产品内容？</h3></div>
+                <p>目前公装无忧主要提供写字楼装修，其中包括毛胚写字楼装修和精装写字楼的隔断装修，以及软装、拆装、售后与装修保险服务。另外也提供消防改造、空调改造等服务。</p>
+                <div><span></span><h3>公装无忧的工人是自己的吗？</h3></div>
+                <p>是的，公装无忧有自建的施工团队，严格把控质量关，每个施工节点都会有专业监理监控验收，您也可以在线监控施工现场，中间有任何问题可以随时联系公装无忧。</p>
+                <div><span></span><h3>公装无忧提供的装修服务与其它传统装修有什么不同？</h3></div>
+                <p>公装无忧是一个互联网拎包办公服务平台。利用互联网思维来改造传统装修行业，整合创业园、孵化园区、IT、建筑智能化、建材供应等资源，为客户提供更好的服务体验。</p>
+                <div><span></span><h3>公装无忧提供的标准化套餐与客户实际情况的差异将如何处理？</h3></div>
+                <p>公装无忧将指派专业设计师去现场量房和客户进行充分沟通，在选定标准化套餐的基础上进行调整与修改，以达到客户的要求。</p>
+                <div><span></span><h3>公装无忧的办公室装修有区域限制吗？</h3></div>
+                <p>除上海地区外，公装无忧现已开通苏州、南京、宁波地区的办公室装修业务。欢迎上海、苏州、南京、宁波地区的客户前来咨询。</p>
+                <div><span></span><h3>公装无忧会提供哪些增值服务？</h3></div>
+                <p>目前公装无忧将为客户提供风水评测、装修保险等服务，也能对接绿植、保洁等服务。</p>
+                <div><span></span><h3>如何确保施工安全及环境质量？</h3></div>
+                <p>公装无忧为广大用户免费提供《建筑安装工程一切险》与《建筑安装工程环境污染责任保险》，提供施工安全及环境质量的双重保障，让您的办公装修高枕无忧。</p>
+
+                <h4>收费问题</h4>
+                <div><span></span><h3>公装无忧收费计价面积是依据什么？</h3></div>
+                <p>公装无忧的计价面积是以建筑面积来计算。 </p>
+                <div><span></span><h3>个性定制的内容是否需要额外收费？</h3></div>
+                <p>套餐以外的产品，公装无忧将按照实际价格收取；套餐以内的产品，并无额外收费。</p>
+                <div><span></span><h3>为什么公装无忧的价格这么便宜？</h3></div>
+                <p>公装无忧与各大家具供应商结盟，装修材料由厂商直供，去除中介，不仅减少了采购建材的环节，也为您省去了中间的利润。</p>
+                <div><span></span><h3>公装无忧的装修预算是如何确定的？</h3></div>
+                <p>1）自助式菜单，根据您的需求选择适合的装修套餐。<br/>
+                    2）根据最终定稿的施工图。请您详细核对预算中所报的项目名称、材料品牌信息、工艺要求等，您可照单验收并监督使用。</p>
+                <div><span></span><h3>报价单以外有无增项？</h3></div>
+                <p>每个设计方案，公装无忧都会出具非常详细的报价单，具体设计方案的等您认可后，公装无忧再为您提供装修服务。报价清晰透明，除您主动额外要求，绝无增项，请您放心。</p>
+
+            </div>
+        </div>
+        <div class="one">
+           <div class="container">
+            <h2>公装无忧提供哪些个性化定制服务</h2>
+            <span></span>
+            <div><span></span><h3>除标准办公装外以外有关个性化设计服务</h3></div>
+            <p>公装无忧会指派项目经理直接协助您与物业沟通，并帮助您办理一切施工需要的相关手续。</p>
+            <div><span></span><h3>移动智能办公设备</h3></div>
+            <p>通过专业监理团队的全程质量监控，以及装修过程信息的全方位披露与展示，让客户能够方便及时地了解与参与质量监控，确保项目施工质量。</p>
+            <div><span></span><h3>个性化软装定制服务</h3></div>
+            <p>公装无忧承诺客户可享受两年有效质保和终身快速维保，质保是指质保期内一切维修工作都由公装无忧负责，贵公司无需任何费用。维保是指
+                质保期后若贵公司部分物件损坏或更换，公装无忧将免费提供上门维修服务。</p>
+           </div>
+        </div>
+        <div class="one">
+            <div class="container">
+                <h2>公装无忧一站式拎包服务平台</h2>
+                <span></span>
+                <p>由于公装无忧强大的平台特性，不仅其自身拥有A级施工资质。 其旗下所有以平台为依托，开展业务的施工团队均拥有分量极高的施工资质。 得
+                    益于此，公装无忧能为市面上绝大部分的办公室进行装修、改造、设计等相对对资质要求较高的装潢项目提供服务。
+                    最重要的是我们在拥有更多更顶级的资质的同时，力求将服务做成商品一般可见，以营造有别与一般装修公司的服务。使良好的服务成为更强大
+                    更有力的资质之一！</p>
+                <img src="img/zizhi.png">
+            </div>
+        </div>
+    </div>
+   </div>
+</section>
+<!--底部-->
+<footer>
+    <div class="container">
+        <div class="footer-t">
+            <!--<ul class="clearfix">-->
+            <!--<li>-->
+            <!--<i>399/㎡</i>-->
+            <!--<p>全网超低软装</p>-->
+            <!--&lt;!&ndash;<span>报价透明，绝不加价，全程报价清晰透明</span>&ndash;&gt;-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<i>18天</i>-->
+            <!--<p>工期超一赔千</p>-->
+            <!--&lt;!&ndash;<span>400平以下18天工期保证，超过1天赔1000元，每天累计</span>&ndash;&gt;-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<i>100%</i>-->
+            <!--<p>正品施工材料</p>-->
+            <!--&lt;!&ndash;<span>健康环保装修，100％正品施工材料，建材软装E1级达标。</span>&ndash;&gt;-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<i>2年</i>-->
+            <!--<p>质保终身维保</p>-->
+            <!--&lt;!&ndash;<span>装修前后有保障，为装修品质保驾护航，两年质保终身维保！</span>&ndash;&gt;-->
+            <!--</li>-->
+            <!--</ul>-->
+            <div class="help-banner">
+                <div class="list-help">
+                    <div class="left">
+                        <div class="left-icon">
+                                     <span>
+
+                                     </span>
+                        </div>
+                        <div class="left">
+                            <p class="title">
+                                售前咨询
+                            </p>
+                            <p class="desc">
+                                400-7676-399
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-text">
+
+                        <div class="right">
+
+                            <p class="list">
+
+                                全方位的装潢咨询
+                            </p>
+
+                            <p class="list">
+
+                                精准的配置推荐
+                            </p>
+
+                            <p class="list">
+
+                                灵活的价格方案
+                            </p>
+
+                            <p class="list">
+
+                                1对1贴心服务
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-b">
+            <div class="top clearfix">
+                <ul>
+                    <li>
+                        <h2>关于我们</h2>
+                        <ul>
+                            <li><a href="">关于我们</a> </li>
+                            <li><a href="">我们的服务</a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>网站帮助</h2>
+                        <ul>
+                            <li><a href="">常见问题</a> </li>
+                            <li><a href="">在线客服</a> </li>
+                            <li><a href=""> 在线留言</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>联系我们</h2>
+                        <ul>
+                            <li><p>地址:</p><span>上海市徐汇区虹梅路2071号远中产业园四期1号楼2515室<br/>上海市奉贤区西渡扶港路900号（总部）</span> </li>
+                            <li>全国热线: 400-7676-399</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>微信公众号</h2>
+                        <i><img src="img/dingyue_icon.jpg"> </i>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <!--<a href="http://www.guolinfloor.com/">地板加盟</a>|-->
+                <!--<a href="http://www.misonyigui.com/">定制衣柜加盟</a>|-->
+                <!--<a href="http://www.sxwqaz.com ">办公家具安装</a>|-->
+                <!--<a href="http://www.huijieanju.com/">上海装修公司</a>|-->
+                <!--<a href="http://www.magic998.com">无锡装修公司</a>|-->
+                <!--<a href="http://www.yooen.com">铝合金门窗厂</a>|-->
+                <!--<a href="http://www.haitai888.cn">深圳装修公司</a>|-->
+
+                <!--<a href="http://sh.pangwo.com">上海信息网</a>|-->
+                <!--<a href="http://www.yzlou.com">一周楼市网</a>|-->
+                <!--<a href="http://www.lakerstime.com.cn">北京阳光房</a>|-->
+                <!--<a href="http://wx.lezh.cn">无锡装修</a>|-->
+                <!--<a href="http://www.91hive.com ">石家庄装修</a>|-->
+                <!--<a href="http://taizhouu.365azw.com/">泰州装修网</a>|-->
+
+
+                <!--<a href="http://jiancai.7wsh.com/">建材网</a>|-->
+                <!--<a href="http://www.xincanzs.com/">成都房屋装修</a>|-->
+                <!--<a href="http://jiafang.jc001.cn/">家纺网</a>|-->
+
+                <!--<a href="http://www.w20.com.cn/  ">花园家具</a>|-->
+                <!--<a href="http://qh.168zhuang.com">琼海装修网</a>|-->
+                <!--<a href="http://www.zxhwzm.com/ ">广东庭院灯厂家</a>|-->
+                <!--<a href="http://hz.mingdiao.com.cn/">惠州装修</a>|-->
+                <!--<a href="http://www.ejuhome.com/">意大利家具</a>|-->
+                <!--<a href="http://cd.dayehome.com">成都别墅装修公司</a>|-->
+                <!--<a href="http://www.mfj85.com/">美缝剂</a>|-->
+
+
+                <p class="copyright">
+                    Copyright © 2015-2016, 51ddo, All Rights Reserved沪ICP备15035347
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    window.onload = function() {
+        var oDiv = document.getElementById("tab");
+        var oLi = oDiv.getElementsByTagName("div")[0].getElementsByTagName("li");
+        var aCon = document.getElementsByClassName("one");
+        var timer = null;
+        var le=oLi.length;
+        for (var i = 0; i < le; i++) {
+            oLi[i].index = i;
+            oLi[i].onmouseover = function() {
+                show(this.index);
+
+            }
+        }
+        function show(a) {
+            index = a;
+            var alpha = 0;
+            for (var j = 0; j < le; j++) {
+                oLi[j].className = "";
+                aCon[j].className = "one";
+                aCon[j].style.opacity = 0;
+                aCon[j].style.filter = "alpha(opacity=0)";
+                aCon[j].style.display="none";
+            }
+            oLi[index].className = "cur";
+            clearInterval(timer);
+            timer = setInterval(function() {
+                        alpha += 2;
+                        alpha > 100 && (alpha = 100);
+                        aCon[index].style.opacity = alpha / 100;
+                        aCon[index].style.filter = "alpha(opacity=" + alpha + ")";
+                        aCon[index].style.display = "block";
+                        alpha == 100 && clearInterval(timer);
+                    },
+                    15)
+        }
+    }
+
+</script>
+</body>
+</html>

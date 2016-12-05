@@ -1,0 +1,646 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <title>公装无忧</title>
+    <meta name="description" content=""/>
+    <meta name="format-detection" content="telephone=no">
+    <!--<meta name="renderer" content="webkit">-->
+    <link rel="shortcut icon" href="http://www.51ddo.com/assets/images/9900.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <!--<link rel="stylesheet" type="text/css" href="css/animate.min.css" >-->
+    <link rel="stylesheet" type="text/css" href="css/header.css" >
+    <link rel="stylesheet" type="text/css" href="css/footer.css" >
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="http://libs.baidu.com/jquery/1.4.4/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/zzsc.js"></script>
+</head>
+<body>
+    <header>
+        <!--注册-->
+
+        <div class="register">
+            <div class="modal-backdrop " onclick="gb()">
+
+            </div>
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <h2></h2>
+                    <p>注册</p>
+                    <form method="post" onsubmit="check()">
+                        <div class="abc">
+                            <label>手机号：</label><input type="text" placeholder="请输入手机号" id="Mobile" class="form-control">
+
+                        </div>
+                        <div class="abc sj">
+                            <label>验证码：</label><input type="text" placeholder="请输入验证码" id="Msg" class="form-control">
+                            <input id="btnSendCode" type="button" value="获取验证码" onclick="sendMessage()">
+                            <i class="false"></i>
+                        </div>
+                        <div class="abc">
+                            <label>密码：</label><input type="text" placeholder="请输入密码" id="Password" class="form-control">
+
+                        </div>
+                        <div class="abc">
+                            <label>密码确认：</label><input type="text" placeholder="确认密码" id="Repeat" class="form-control">
+
+                        </div>
+                        <div class="abc">
+                            <input class="form-btn" type="button" value="确认注册">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-login">
+                <div class="modal-content">
+                    <h2></h2>
+                    <p>登录</p>
+                <div class="abc">
+                    <label>用户名:</label><input type="text" placeholder="请输入密码"  class="form-control">
+
+                </div>
+                <div class="abc">
+                    <label>密码：</label><input type="text" placeholder="确认密码"  class="form-control">
+
+                </div>
+                <div class="abc">
+                    <a href="">忘记密码？</a>
+                    <input class="form-btn" type="button" value="登录">
+                </div>
+                </div>
+            </div>
+            <div class="success">
+                <div class="modal-content">
+                    <h2></h2>
+                    <h3>恭喜您，注册成功 !</h3>
+                    <span></span>
+                    <a>点击立刻领取399元/㎡快装套餐</a>
+                    <i>24小时上门量房  18天工期保障  36小时后期维护</i>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="nav-l"><a href="index.html"></a> </div>
+                <div class="nav-r">
+                    <div class="le">
+                        <ul>
+                            <li><a href="">实时报价</a> </li>
+                            <li><a href="">设计顾问</a> </li>
+                            <li><a href="map_building.html">施工分布</a> </li>
+                        </ul>
+                    </div>
+                    <div class="ri">
+                        <a onclick="zc()">注册</a>
+                        <a onclick="dl()">登录</a>
+                    </div>
+                </div>
+             </div>
+        </nav>
+    </header>
+
+    <!--banner-->
+
+    <div class="slider">
+       <ul>
+           <li><a href=""> <img src="img/banner.jpg"></a> </li>
+       </ul>
+    </div>
+    <!--右侧导航栏-->
+
+    <div class="right-nav clearfix">
+        <ul>
+            <li>
+                    <span>
+                    <a href="http://p.qiao.baidu.com/cps/chat?siteId=7970219&userId=18045185" target="_blank"></a>
+                    </span>
+
+            </li>
+            <li>
+                <span class="phone"></span>
+                <div class="show-tel">
+                    <div class="tel-hover-panel">
+                        <div class="top-area">
+                            <div class="top-left-icon">
+                                <img src="img/tel-b.png"  alt="">
+                            </div>
+                            <div class="top-right-text">
+                                <p class="desc">
+                                    售前咨询电话
+                                </p>
+                                <p class="phone">
+                                    <span >400-7676-399</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bottom-area">
+                            <ul class="bottom-li">
+
+                                <li>
+                                    <!--
+                                    <a href="" target="_blank">全方位的购买咨询</a> -->
+                                    <p>
+                                        全方位的购买咨询
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <!--
+                                    <a href="" target="_blank">精准的配置推荐</a> -->
+                                    <p>
+                                        精准的配置推荐
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <!--
+                                    <a href="" target="_blank">灵活的价格方案</a> -->
+                                    <p>
+                                        灵活的价格方案
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <!--
+                                    <a href="" target="_blank">1对1贴心服务</a> -->
+                                    <p>
+                                        1对1贴心服务
+                                    </p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <span></span>
+                <img src="img/dingyue_icon.jpg">
+            </li>
+            <li  class="scroll" id="scroll">
+                <span></span>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+    <section>
+    <!--菜单-->
+        <div class="menu">
+            <div class="container">
+                <ul>
+                    <li><a href="about.html" target="_Blank" ><i></i><span>关于我们</span></a></li>
+                    <li><a href="ProcessOne.html" target="_Blank" ><i></i><span>在线报价</span></a></li>
+                    <li><i></i><span>设计定制</span></li>
+                    <li><i></i><span>软装配套</span></li>
+                    <li><i></i><span>售后服务</span></li>
+                </ul>
+            </div>
+        </div>
+
+    <!--精选套餐-->
+        <div class="package">
+            <div class="container">
+                <div class="t-99 clearfix">
+                    <h2>精选套餐</h2>
+                    <div class="t-l">
+                        <h3>399套餐</h3>
+                       <p><b>·</b>硬装部分使用建筑面积为200平方米的标准配置施工。</p>
+                       <p><b>·</b>独立房间标配为4间（建筑面积200平米以内），超过部分按每增加一间</p><p class="pad">加收4500元</p>
+                       <p><b>·</b>个性化定制部分包括会议室白板玻璃、logo背景墙安装</p>
+                       <p><b>·</b>公共区域保护、装修押金、物业管理费等费用公装无忧提供代缴纳服务，</p><p class="pad">可预先将款项支付给公装无忧代理。</p>
+
+                        <p class="pad mr">其他公共区域保护、装修押金、物业管理费等费用公装无忧提供代缴纳服</p>
+                        <p class="pad">务可预先将款项支付给公装无忧代理。</p>
+                        <a href="">查看详情</a>
+                    </div>
+                    <div class="t-r">
+                        <a href="http://p.qiao.baidu.com/cps/chat?siteId=7970219&userId=18045185" target="_blank" class="button">
+                            <i></i><span>在线咨询</span>
+                        </a>
+                        <div class="more">
+                            <a href=""><span>其他套餐</span><b>→</b></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--施工现场-->
+        <div class="build">
+            <div class="container">
+                <div class="build-t">
+                    <h2>施工现场监测</h2>
+                    <p>公装无忧独有的施工现场跟踪服务让您随时监督施工状态</p>
+                    <form action="" method="post">
+                        <input type="text" name="numberId" class="form-control" placeholder="请填写合同号">
+                        <button type="submit" class="btn"></button>
+                    </form>
+                    <a href=""><span>查看其他 </span><b>→</b></a>
+                </div>
+                <div class="build-b">
+                    <div class="dw">
+                        <span></span>
+                        <h2>上海</h2>
+                    </div>
+                    <p><i class="l"></i><span>当日数据实时更新</span><i class="r"></i></p>
+                    <ul>
+                        <li class="wow fadeInUp"  data-wow-delay="0.1s">
+                            <p>118</p><span>上海现在有<b>118</b>个项目正在施工</span>
+                        </li>
+                        <li class="wow fadeInUp"  data-wow-delay="0.2s">
+                            <p>207</p><span>其中有<b>207</b>个项目刚开工</span>
+                        </li>
+                        <li class="wow fadeInUp"  data-wow-delay="0.3s">
+                            <p>345</p><span>其中有<b>345</b>个项目正在施工中</span>
+                        </li>
+                        <li class="wow fadeInUp"  data-wow-delay="0.4s">
+                            <p>649</p><span>其中<b>649</b>个项目已顺利完工</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="more">
+                    <a href=""><span>其他城市</span><b>→</b></a>
+
+                </div>
+            </div>
+        </div>
+
+    <!--设计师    -->
+        <div class="designer">
+            <div class="container">
+                <div class="designer-t">
+                    <h2>专业的设计师团队</h2>
+                    <span></span>
+                    <p>公装无忧与多家各行业优质企业合作，保持我们的进步，保证我们的服务 </p>
+                </div>
+                <div class="designer-b clearfix">
+                    <ul class ="card-area" id="card">
+                        <li class="col">
+                            <div class="col-t">
+                                <span></span>
+                                <p>通用型解决方案</p>
+                            </div>
+                            <div class="col-b">
+                                <span class="img"></span>
+                                <div class="txt">
+                                <h2>硬装设计师 | 从事硬装设计17年</h2>
+                                <p>设计完成后，需要对空间中的细节部分进行精致的细节优化，
+                                    考虑各个部分的合理性和可行性。
+                                </p>
+                                </div>
+                                <a href=""><span>更多设计师</span><b>→</b></a>
+                            </div>
+                        </li>
+
+                        <li class="col">
+                            <div class="col-t">
+                                <span></span>
+                                <p>连锁店解决方案</p>
+                            </div>
+                            <div class="col-b">
+                                <span class="img"></span>
+                                <div class="txt">
+                                    <h2>硬装设计师 | 从事硬装设计17年</h2>
+                                    <p>设计完成后，需要对空间中的细节部分进行精致的细节优化，
+                                        考虑各个部分的合理性和可行性。
+                                    </p>
+                                </div>
+                                <a href=""><span>更多设计师</span><b>→</b></a>
+                            </div>
+
+                        </li>
+                        <li class="col   active">
+                            <div class="col-t">
+                                <span></span>
+                                <p>众创空间解决方案</p>
+                            </div>
+                            <div class="col-b">
+                                <span class="img"></span>
+                                <div class="txt">
+                                    <h2>硬装设计师 | 从事硬装设计17年</h2>
+                                    <p>设计完成后，需要对空间中的细节部分进行精致的细节优化，
+                                        考虑各个部分的合理性和可行性。
+                                    </p>
+                                </div>
+                                <a href=""><span>更多设计师</span><b>→</b></a>
+                            </div>
+                        </li>
+                        <li class="col">
+                            <div class="col-t">
+                                <span></span>
+                                <p>咨询/教育/电商解决方案</p>
+                            </div>
+                            <div class="col-b">
+                                <span class="img"></span>
+                                <div class="txt">
+                                    <h2>硬装设计师 | 从事硬装设计17年</h2>
+                                    <p>设计完成后，需要对空间中的细节部分进行精致的细节优化，
+                                        考虑各个部分的合理性和可行性。
+                                    </p>
+                                </div>
+                                <a href=""><span>更多设计师</span><b>→</b></a>
+                            </div>
+
+                        </li>
+                        <li class="col">
+                            <div class="col-t">
+                                <span></span>
+                                <p>金融证券解决方案</p>
+                            </div>
+                            <div class="col-b">
+                                <span class="img"></span>
+                                <div class="txt">
+                                    <h2>硬装设计师 | 从事硬装设计17年</h2>
+                                    <p>设计完成后，需要对空间中的细节部分进行精致的细节优化，
+                                        考虑各个部分的合理性和可行性。
+                                    </p>
+                                </div>
+                                <a href=""><span>更多设计师</span><b>→</b></a>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    <!--企业新闻    -->
+        <div class="news">
+            <div class="container">
+                <div class="news-b clearfix">
+                    <h2>为什么选择我们</h2>
+                    <span></span>
+                    <p>去“标准化”、去“中介化”、“一体化”为服务理念，打造一个信息透明、高效和高度垂直的B2B平台！ </p>
+                    <div class="left">
+                        <iframe height=420 width=620 src='http://player.youku.com/embed/XMTcyOTA1NDQwNA==' frameborder=0 allowfullscreen></iframe></div>
+                    <div class="right wow fadeInUp">
+                        <div><span></span><h5>健康环保装修</h5></div>
+                        <p>健康环保装修，100％正品施工材料，建材软装E1级达标</p>
+                        <div><span></span><h5>报价透明绝不加价</h5></div>
+                        <p>全程报价清晰透明除施工中客户主动额外要求绝无增项</p>
+                        <div><span></span><h5>流程公开 工期短</h5></div>
+                        <p>400平以下18天工期保证，超过1天赔1000元，专人负责进度</p>
+                        <div><span></span><h5>质保终身维保</h5></div>
+                        <p>装修前后有保障，为装修品质保驾护航，两年质保终身维保</p>
+                        <div><span></span><h5>实时掌控施工情况</h5></div>
+                        <p>施工现场二维码推送，随时线上沟通、线上解决任何施工中的问题</p>
+                    </div>
+                </div>
+                <div class="news-t">
+                    <h2>企业新闻</h2>
+                    <span></span>
+                    <p>公装无忧与多家各行业优质企业合作，保持我们的进步，保证我们的服务 </p>
+                    <div class="y-row clearfix">
+                        <div class="news-txt">
+                            <a href="NewsAbout.html">
+                                <div class="item-box">
+                                    <div class="img-area">
+                                        <img src="img/1.jpg">
+                                    </div>
+                                    <div class="box-header">
+                                        <p>如何制定装修预算方案?</p>
+                                    </div>
+                                </div>    
+                            </a>
+                        </div>
+                        <div class="news-txt">
+                            <a href="">
+                                <div class="item-box">
+                                    <div class="img-area">
+                                        <img src="img/2.jpg">
+                                    </div>
+                                    <div class="box-header">
+                                        <p>如何制定装修预算方案?</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="news-txt">
+                            <a href="">
+                                <div class="item-box">
+                                    <div class="img-area">
+                                        <img src="img/3.jpg">
+                                    </div>
+                                    <div class="box-header">
+                                        <p>如何制定装修预算方案?</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <a href=""><span>更多新闻</span><b>→</b></a>
+                </div>
+
+            </div>
+        </div>
+
+    <!--合作伙伴    -->
+        <div class="friend">
+            <div class="container clearfix">
+                <h2>合作伙伴</h2>
+                <span></span>
+                <p>公装无忧与多家各行业优质企业合作，保持我们的进步，保证我们的服务 </p>
+                <div class="module-title"></div>
+                <div class="inner js j_index_carouseProduct">
+
+                    <ul>
+                        <li class="wow fadeInUp" data-wow-delay="0.1s">
+                            <a href=""><img src="img/logo-1.jpg"> </a>
+                            <a href=""><img src="img/logo-2.jpg"> </a>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="0.3s">
+                            <a href=""><img src="img/logo-3.jpg"> </a>
+                            <a href=""><img src="img/logo-4.jpg"> </a>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="0.5s">
+                            <a href=""><img src="img/logo-5.jpg"> </a>
+                            <a href=""><img src="img/logo-6.jpg"> </a>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="0.7s">
+                            <a href=""><img src="img/logo-7.jpg"> </a>
+                            <a href=""><img src="img/logo-8.jpg"> </a>
+                        </li>
+
+
+                    </ul>
+
+                    <!--<a href=""><span>其他伙伴</span><b>→</b></a>-->
+                </div>
+            </div>
+        </div>
+
+    <!--新手banner    -->
+        <div class="new-banner">
+
+                <div class="container ">
+                    <h2>现在注册，即可享受专属礼包</h2>
+                    <a onclick="zc()">立刻注册</a>
+                </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!--底部-->
+    <footer>
+        <div class="container">
+            <div class="footer-t">
+                <!--<ul class="clearfix">-->
+                    <!--<li>-->
+                        <!--<i>399/㎡</i>-->
+                        <!--<p>全网超低软装</p>-->
+                        <!--&lt;!&ndash;<span>报价透明，绝不加价，全程报价清晰透明</span>&ndash;&gt;-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<i>18天</i>-->
+                        <!--<p>工期超一赔千</p>-->
+                        <!--&lt;!&ndash;<span>400平以下18天工期保证，超过1天赔1000元，每天累计</span>&ndash;&gt;-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<i>100%</i>-->
+                        <!--<p>正品施工材料</p>-->
+                        <!--&lt;!&ndash;<span>健康环保装修，100％正品施工材料，建材软装E1级达标。</span>&ndash;&gt;-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<i>2年</i>-->
+                        <!--<p>质保终身维保</p>-->
+                        <!--&lt;!&ndash;<span>装修前后有保障，为装修品质保驾护航，两年质保终身维保！</span>&ndash;&gt;-->
+                    <!--</li>-->
+                <!--</ul>-->
+                <div class="help-banner">
+                    <div class="list-help">
+                        <div class="left">
+                            <div class="left-icon">
+                                     <span>
+
+                                     </span>
+                            </div>
+                            <div class="left">
+                                <p class="title">
+                                    售前咨询
+                                </p>
+                                <p class="desc">
+                                   400-7676-399
+                                </p>
+                            </div>
+                        </div>
+                        <div class="right-text">
+
+                            <div class="right">
+
+                                <p class="list">
+
+                                    全方位的装潢咨询
+                                </p>
+
+                                <p class="list">
+
+                                    精准的配置推荐
+                                </p>
+
+                                <p class="list">
+
+                                    灵活的价格方案
+                                </p>
+
+                                <p class="list">
+
+                                    1对1贴心服务
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-b">
+                <div class="top clearfix">
+                    <ul>
+                        <li>
+                            <h2>关于我们</h2>
+                            <ul>
+                                <li><a href="http://www.51ddo.com/gzwy/3.0/about.html">关于我们</a> </li>
+                                <li><a href="">我们的服务</a> </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>网站帮助</h2>
+                            <ul>
+                                <li><a href="">常见问题</a> </li>
+                                <li><a href="http://p.qiao.baidu.com/cps/chat?siteId=7970219&userId=18045185" target="_blank">在线客服</a> </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>联系我们</h2>
+                            <ul>
+                                <li><p>地址:</p><span>上海市徐汇区虹梅路2071号远中产业园四期1号楼2515室<br/>上海市奉贤区西渡扶港路900号（总部）</span> </li>
+                                <li>全国热线: 400-7676-399</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>微信公众号</h2>
+                            <i><img src="img/dingyue_icon.jpg"> </i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <!--<a href="http://www.guolinfloor.com/">地板加盟</a>|-->
+                    <!--<a href="http://www.misonyigui.com/">定制衣柜加盟</a>|-->
+                    <!--<a href="http://www.sxwqaz.com ">办公家具安装</a>|-->
+                    <!--<a href="http://www.huijieanju.com/">上海装修公司</a>|-->
+                    <!--<a href="http://www.magic998.com">无锡装修公司</a>|-->
+                    <!--<a href="http://www.yooen.com">铝合金门窗厂</a>|-->
+                    <!--<a href="http://www.haitai888.cn">深圳装修公司</a>|-->
+
+                    <!--<a href="http://sh.pangwo.com">上海信息网</a>|-->
+                    <!--<a href="http://www.yzlou.com">一周楼市网</a>|-->
+                    <!--<a href="http://www.lakerstime.com.cn">北京阳光房</a>|-->
+                    <!--<a href="http://wx.lezh.cn">无锡装修</a>|-->
+                    <!--<a href="http://www.91hive.com ">石家庄装修</a>|-->
+                    <!--<a href="http://taizhouu.365azw.com/">泰州装修网</a>|-->
+
+
+                    <!--<a href="http://jiancai.7wsh.com/">建材网</a>|-->
+                    <!--<a href="http://www.xincanzs.com/">成都房屋装修</a>|-->
+                    <!--<a href="http://jiafang.jc001.cn/">家纺网</a>|-->
+
+                    <!--<a href="http://www.w20.com.cn/  ">花园家具</a>|-->
+                    <!--<a href="http://qh.168zhuang.com">琼海装修网</a>|-->
+                    <!--<a href="http://www.zxhwzm.com/ ">广东庭院灯厂家</a>|-->
+                    <!--<a href="http://hz.mingdiao.com.cn/">惠州装修</a>|-->
+                    <!--<a href="http://www.ejuhome.com/">意大利家具</a>|-->
+                    <!--<a href="http://cd.dayehome.com">成都别墅装修公司</a>|-->
+                    <!--<a href="http://www.mfj85.com/">美缝剂</a>|-->
+
+
+                    <p class="copyright">
+                        Copyright © 2015-2016, 51ddo, All Rights Reserved沪ICP备15035347
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--<script src="http://cdn.dowebok.com/131/js/wow.min.js"></script>-->
+    <script>
+
+
+        $(function(){
+            //设计师切换
+            $("#card").delegate("li", "mouseover mouseout", function(){
+                $(this).addClass("active").siblings("li").removeClass("active");
+            });
+
+        })
+
+    </script>
+</body>
+</html>

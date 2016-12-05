@@ -1,0 +1,341 @@
+ul {
+  padding: 0;
+  margin: 0;
+}
+section .tabList {
+  width: 100%;
+  height: 45px;
+  border-top: 3px solid #1ff4ba;
+  border-bottom: 1px solid #dddddd ;
+}
+section .tabList ul li {
+  float: left;
+  width: 19.8%;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  border: 1px solid #dddddd;
+  border-bottom: none;
+  border-top: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+section .tabList ul li.cur {
+  background-color: #1ff4ba;
+  color: #FFF;
+}
+section .tabCon {
+  min-height: 1000px;
+  padding-top: 60px;
+}
+section .tabCon .container > h2 {
+  font-size: 35px;
+  font-weight: 500;
+  color: #020202;
+}
+section .tabCon .container > span {
+  width: 125px;
+  height: 3px;
+  display: inline-block;
+  background-color: #00da8b;
+}
+section .tabCon .container > i {
+  font-style: normal;
+  font-size: 18px;
+  color: #a5a5a5 ;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 45px;
+}
+section .tabCon .container > img {
+  width: 100%;
+}
+section .tabCon > div:nth-child(1) .five {
+  width: 100%;
+  text-align: center;
+}
+section .tabCon > div:nth-child(1) .five ul {
+  padding: 70px 0 100px 0;
+}
+section .tabCon > div:nth-child(1) .five ul li {
+  width: 190px;
+  padding: 2px;
+  float: left;
+}
+section .tabCon > div:nth-child(1) .five ul li b {
+  width: 125px;
+  height: 125px;
+  border-radius: 125px;
+  border: 1px solid #162f31;
+  display: inline-block;
+  line-height: 125px;
+  font-size: 30px;
+}
+section .tabCon > div:nth-child(1) .five ul li p {
+  font-size: 19px;
+  color: #162f31;
+  font-weight: 600;
+  padding: 20px 0 15px 0;
+}
+section .tabCon > div:nth-child(1) .five ul li span {
+  font-size: 12px;
+  color: #494949;
+}
+section .tabCon > div:nth-child(1) .more {
+  width: 100%;
+  height: 350px;
+  background: url("../img/more.jpg") center;
+  text-align: center;
+}
+section .tabCon > div:nth-child(1) .more ul {
+  width: 770px;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+section .tabCon > div:nth-child(1) .more ul li {
+  width: 20%;
+  float: left;
+  height: 56px;
+  line-height: 56px;
+}
+section .tabCon > div:nth-child(1) .more ul li:nth-child(1),
+section .tabCon > div:nth-child(1) .more ul li:nth-child(5) {
+  font-size: 16px;
+}
+section .tabCon > div:nth-child(1) .more ul li:nth-child(2),
+section .tabCon > div:nth-child(1) .more ul li:nth-child(4) {
+  font-size: 20px;
+}
+section .tabCon > div:nth-child(1) .more ul li:nth-child(3) {
+  font-size: 35px;
+  position: relative;
+}
+section .tabCon > div:nth-child(1) .more ul li:nth-child(3) p {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: relative;
+}
+section .tabCon > div:nth-child(1) .more ul li:nth-child(3) span {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  border-radius: 45px;
+  position: absolute;
+  left: 56px;
+  top: 10px;
+  background-color: #05ebac;
+  z-index: 1;
+}
+section .tabCon > div:nth-child(1) .more h2 {
+  padding-top: 50px;
+}
+section .tabCon > div:nth-child(1) .more .container > p {
+  display: inline-block;
+  width: 100%;
+  padding-top: 50px;
+  font-size: 14px;
+  font-weight: bold;
+}
+section .tabCon > div:nth-child(1) .customerService {
+  width: 100%;
+  text-align: center;
+}
+section .tabCon > div:nth-child(1) .customerService h2 {
+  padding-top: 80px;
+}
+section .tabCon > div:nth-child(1) .customerService .cust-img {
+  width: 100%;
+  height: 477px;
+  background: url("../img/canvas.png") center no-repeat;
+}
+section .tabCon > div:nth-child(1) .int {
+  width: 100%;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+section .tabCon > div:nth-child(1) .int h2 {
+  padding-top: 60px;
+}
+section .tabCon > div:nth-child(1) .int .int-img {
+  width: 100%;
+  height: 535px;
+  background: url("../img/int.png") 0 20px no-repeat;
+  background-size: contain;
+}
+section .tabCon > div:nth-child(1) .pk {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 100px;
+}
+section .tabCon > div:nth-child(1) .pk h2 {
+  padding-top: 60px;
+}
+section .tabCon > div:nth-child(1) .pk .left {
+  width: 85px;
+  float: left;
+}
+section .tabCon > div:nth-child(1) .pk .left .top {
+  width: 100%;
+  height: 120px;
+}
+section .tabCon > div:nth-child(1) .pk .left .top span {
+  width: 65px;
+  height: 25px;
+  background-color: #00da8b;
+  display: inline-block;
+  margin-top: 35px;
+}
+section .tabCon > div:nth-child(1) .pk .left .bottom {
+  width: 100%;
+  height: 87px;
+}
+section .tabCon > div:nth-child(1) .pk .left .bottom span {
+  width: 65px;
+  height: 25px;
+  background-color: #d9f5eb;
+  display: inline-block;
+  margin-top: 35px;
+}
+section .tabCon > div:nth-child(1) .pk .right {
+  width: 1085px;
+  float: left;
+}
+section .tabCon > div:nth-child(1) .pk .right ul li {
+  width: 182px;
+  float: left;
+  margin-left: 35px;
+}
+section .tabCon > div:nth-child(1) .pk .right ul li h3 {
+  font-size: 18px;
+  color: #393939;
+  font-weight: 400;
+  height: 35px;
+  line-height: 35px;
+}
+section .tabCon > div:nth-child(1) .pk .right ul li .top {
+  width: 100%;
+  height: 120px;
+  background-color: #00da8b;
+  color: #FFF;
+}
+section .tabCon > div:nth-child(1) .pk .right ul li .top p {
+  padding: 25px 15px;
+  font-size: 14px;
+}
+section .tabCon > div:nth-child(1) .pk .right ul li .bottom {
+  width: 100%;
+  height: 85px;
+  background-color: #d9f5eb;
+  color: #393939;
+}
+section .tabCon > div:nth-child(1) .pk .right ul li .bottom p {
+  padding: 25px 15px;
+  font-size: 14px;
+}
+section .tabCon > div:nth-child(2) {
+  text-align: center;
+  display: none;
+}
+section .tabCon > div:nth-child(2) p {
+  padding: 70px 70px 70px 70px;
+  font-size: 18px;
+  color: #a5a5a5;
+  text-align: left;
+  text-indent: 2em;
+}
+section .tabCon > div:nth-child(3) {
+  text-align: center;
+  display: none;
+  padding-bottom: 50px;
+}
+section .tabCon > div:nth-child(3) h4 {
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+  color: #FFF;
+  background-color: #05ebac;
+  margin-top: 60px;
+  font-size: 16px;
+  font-weight: 400;
+}
+section .tabCon > div:nth-child(3) h4,
+section .tabCon > div:nth-child(3) p {
+  margin-left: 50px;
+}
+section .tabCon > div:nth-child(3) p {
+  text-align: left;
+  padding-top: 15px;
+  font-size: 18px;
+  color: #a5a5a5;
+  padding-left: 30px;
+}
+section .tabCon > div:nth-child(3) .container > div {
+  padding-left: 50px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 25px;
+}
+section .tabCon > div:nth-child(3) .container > div span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: #00da8b;
+  float: left;
+  margin: 10px;
+}
+section .tabCon > div:nth-child(3) .container > div h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+section .tabCon > div:nth-child(4) {
+  text-align: center;
+  display: none;
+}
+section .tabCon > div:nth-child(4) p {
+  text-align: left;
+  padding-top: 15px;
+  font-size: 18px;
+  color: #a5a5a5;
+  padding-left: 80px;
+}
+section .tabCon > div:nth-child(4) .container > div {
+  padding-left: 50px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 25px;
+}
+section .tabCon > div:nth-child(4) .container > div span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: #00da8b;
+  float: left;
+  margin: 10px;
+}
+section .tabCon > div:nth-child(4) .container > div h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+section .tabCon > div:nth-child(5) {
+  text-align: center;
+  display: none;
+}
+section .tabCon > div:nth-child(5) p {
+  padding: 20px 70px;
+  text-align: left;
+  font-size: 18px;
+  color: #a5a5a5;
+}
+.fix {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  z-index: 99;
+}

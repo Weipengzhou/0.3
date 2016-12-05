@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="0.3">
+    <serverData>
+      <paths name="0.3">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/var/www/51ddo.com/master/latest/web/gzwy/3.0" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

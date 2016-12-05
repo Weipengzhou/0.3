@@ -1,0 +1,123 @@
+section {
+  padding-top: 50px;
+}
+section a:hover {
+  color: #05ebac!important;
+}
+section .nav {
+  width: 100%;
+  height: 80px;
+  padding-bottom: 20px;
+}
+section .nav li {
+  float: left;
+  width: 110px;
+  height: 30px;
+}
+section .nav li a {
+  padding: 10px 0 10px 0;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
+section .nav .on a {
+  border-bottom: 2px solid #05ebac;
+}
+section .left {
+  width: 830px;
+  float: left;
+  overflow: hidden;
+}
+section .left .title {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  text-align: center;
+}
+section .left .title h2 {
+  font-size: 28px;
+  width: 100%;
+  text-align: center;
+  color: #393939;
+}
+section .left .title span {
+  display: inline-block;
+  font-size: 14px;
+  color: rgba(57, 57, 57, 0.6);
+  position: absolute;
+  right: 0;
+  top: 30px;
+}
+section .left .text {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+section .left .text p {
+  font-size: 16px;
+  text-indent: 2em;
+  line-height: 2em;
+  margin: 15px 0;
+}
+section .right {
+  width: 250px;
+  margin-left: 90px;
+  float: left;
+}
+section .right h2 {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #05ebac;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 500;
+}
+section .right .biao {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 2px solid #ebebeb ;
+  margin-bottom: 20px;
+}
+section .right .biao h3 {
+  font-size: 20px;
+  color: #393939;
+  font-weight: 500;
+  padding-left: 50px;
+  display: inline-block;
+  float: left;
+}
+section .right .biao span {
+  width: 4px;
+  height: 22px;
+  display: inline-block;
+  background-color: #05ebac;
+  float: left ;
+  margin-top: 20px;
+}
+section .right .name {
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  overflow: hidden;
+}
+section .right .name span {
+  width: 4px;
+  height: 4px;
+  display: inline-block;
+  float: left;
+  background-color: #05Ebac;
+  margin-top: 10px;
+  margin-right: 45px;
+}
+section .right .name a {
+  display: inline-block;
+  float: left;
+  height: 100%;
+  font-size: 14px;
+  color: #393939;
+  text-decoration: none;
+  white-space: nowrap;
+}

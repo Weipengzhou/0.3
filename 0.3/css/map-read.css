@@ -1,0 +1,688 @@
+html {
+  height: 100%;
+}
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+body {
+  width: 100%;
+  min-width: 1349px;
+  height: 100%;
+}
+header {
+  width: 100%;
+  height: 100px;
+  min-width: 1349px;
+  z-index: 2;
+  background-color: #FFF;
+}
+header .left {
+  width: 33%;
+  height: 100%;
+  float: left;
+}
+header .left a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+header .left a img {
+  padding-left: 105px;
+}
+header .right {
+  width: 60%;
+  float: left;
+  height: 100%;
+}
+header .right ul {
+  width: 520px;
+  height: 100%;
+  float: left;
+}
+header .right ul li {
+  float: left;
+  width: 130px;
+  height: 100px;
+  line-height: 100px;
+}
+header .right ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  color: #393939;
+  text-align: center;
+  text-decoration: none;
+}
+header .right form {
+  width: 250px;
+  height: 30px;
+  position: relative;
+  float: right;
+  padding: 35px 0 35px 0;
+}
+header .right form input {
+  height: 30px;
+  width: 100%;
+  border-radius: 30px;
+}
+header .right form button {
+  position: absolute;
+  right: 10px;
+  top: 38px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: none;
+  display: inline-block;
+  background: url("../img/map-icon.png") -44px -496px no-repeat;
+}
+header .right form input[type='text'] {
+  text-indent: 2em;
+  border-color: #707070;
+}
+nav {
+  width: 80px;
+  background-color: #ebebeb;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+}
+nav > ul {
+  width: 100%;
+  height: 100%;
+}
+nav > ul > li:nth-child(2):hover {
+  background-color: #FFF;
+}
+nav > ul > li:nth-child(2):hover span {
+  background: url("../img/map-icon.png") -105px -190px no-repeat;
+}
+nav > ul > li:nth-child(2) span {
+  background: url("../img/map-icon.png") -44px -190px no-repeat;
+}
+nav > ul > li:nth-child(3):hover {
+  background-color: #FFF;
+}
+nav > ul > li:nth-child(3):hover span {
+  background: url("../img/map-icon.png") -102px -110px no-repeat;
+}
+nav > ul > li:nth-child(3) span {
+  background: url("../img/map-icon.png") -44px -110px no-repeat;
+}
+nav > ul > li:nth-child(4):hover {
+  background-color: #FFF;
+}
+nav > ul > li:nth-child(4):hover span {
+  background: url("../img/map-icon.png") -105px -30px no-repeat;
+}
+nav > ul > li:nth-child(4) span {
+  background: url("../img/map-icon.png") -44px -30px no-repeat;
+}
+nav > ul > li:nth-child(5):hover {
+  background-color: #FFF;
+}
+nav > ul > li:nth-child(5):hover span {
+  background: url("../img/map-icon.png") -105px -275px no-repeat;
+}
+nav > ul > li:nth-child(5) span {
+  background: url("../img/map-icon.png") -44px -275px no-repeat;
+}
+nav > ul > li {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  text-align: center;
+}
+nav > ul > li:hover i {
+  display: none;
+}
+nav > ul > li:hover p {
+  color: #05ebac;
+}
+nav > ul > li:hover ul {
+  display: block;
+  animation: mymove 1s;
+  animation-fill-mode: forwards;
+}
+nav > ul > li:hover ul:hover {
+  display: block;
+}
+nav > ul > li i {
+  position: absolute;
+  bottom: -1px;
+  height: 1px;
+  width: 80%;
+  background-color: #b9b9b9;
+  display: inline-block;
+  left: 10%;
+}
+nav > ul > li span {
+  width: 40px;
+  height: 50px;
+  display: inline-block;
+  margin-top: 10px;
+}
+nav > ul > li ul {
+  width: 157px;
+  position: absolute;
+  display: none;
+  left: 80px;
+  top: 0;
+}
+nav > ul > li ul li {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #e5e7ec;
+  background-color: #FFF;
+}
+nav > ul > li ul li:hover {
+  background-color: #05ebac;
+}
+nav > ul > li ul li a {
+  width: 90%;
+  padding-left: 20px;
+  height: 100%;
+  display: inline-block;
+  line-height: 40px;
+  text-align: left;
+  color: #737473;
+}
+nav > ul > li ul li a:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+@keyframes mymove {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+section {
+  padding-bottom: 20px;
+}
+section .bgimg {
+  width: 100%;
+  height: 420px;
+  position: relative;
+  background-color: #000;
+}
+section .bgimg img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+section .bgimg .title {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  text-align: center;
+}
+section .bgimg .title h2 {
+  font-size: 50px;
+  font-weight: 500;
+  color: #FFF;
+}
+section .bgimg .title p {
+  width: 310px;
+  height: 60px;
+  border: 3px solid #05ebac;
+  color: #05ebac;
+  font-size: 20px;
+  display: inline-block;
+  margin-top: 70px;
+  line-height: 60px;
+}
+section .massage {
+  height: 240px;
+  padding-top: 70px;
+  width: 100%;
+}
+section .massage ul {
+  width: 100%;
+  height: 240px;
+}
+section .massage ul li {
+  width: 25%;
+  float: left;
+  height: 100%;
+}
+section .massage ul li span {
+  display: inline-block;
+  float: left;
+}
+section .massage ul .right {
+  width: 192px;
+  height: 60px;
+  float: left;
+}
+section .massage ul .right h2 {
+  font-size: 16px;
+  color: #737473;
+}
+section .massage ul .right p {
+  font-size: 16px;
+  color: #cac8c8;
+}
+section .massage ul .top {
+  width: 100%;
+  height: 80px;
+}
+section .massage ul .top .left {
+  width: 100px;
+  height: 60px;
+}
+section .massage ul .bottom {
+  width: 100%;
+  height: 80px;
+  padding-top: 30px;
+}
+section .massage ul .bottom .left {
+  width: 100px;
+  height: 60px;
+}
+section .massage ul li:nth-child(1) .top .left {
+  background: url("../img/read-icon.png") 0 -20px;
+}
+section .massage ul li:nth-child(1) .bottom .left {
+  background: url("../img/read-icon.png") 0 -140px;
+}
+section .massage ul li:nth-child(2) .top .left {
+  background: url("../img/read-icon.png") -290px -20px;
+}
+section .massage ul li:nth-child(2) .bottom .left {
+  background: url("../img/read-icon.png") -290px -140px;
+}
+section .massage ul li:nth-child(3) .top .left {
+  background: url("../img/read-icon.png") -580px -20px;
+}
+section .massage ul li:nth-child(3) .bottom .left {
+  background: url("../img/read-icon.png") -580px -135px;
+}
+section .massage ul li:nth-child(4) .top {
+  height: 50px;
+  background: url("../img/read-icon.png") -890px -15px no-repeat;
+}
+section .massage ul li:nth-child(4) .bottom {
+  width: 115px;
+  height: 115px;
+  overflow: hidden;
+  margin-left: 100px;
+  padding-top: 0;
+}
+section .massage ul li:nth-child(4) .bottom img {
+  width: 100%;
+  height: 100%;
+}
+section .pic {
+  width: 100%;
+  height: 510px;
+  background-color: #f8f7f7;
+  display: none;
+}
+section .pic .left,
+section .pic .right {
+  float: left;
+  width: 50%;
+  height: 510px;
+}
+section .pic .left img,
+section .pic .right img {
+  width: 570px;
+  height: 410px;
+  margin: 30px 15px 10px 15px;
+}
+section .pic .left p,
+section .pic .right p {
+  text-align: center;
+  font-size: 16px;
+  color: #737473;
+}
+section .work {
+  position: relative;
+}
+section .work .title {
+  width: 100%;
+  height: 90px;
+  padding-top: 80px;
+  text-align: center;
+}
+section .work .title h2 {
+  font-size: 40px;
+  color: #393939;
+  font-weight: 400;
+  text-align: center;
+}
+section .work .title span {
+  width: 120px;
+  height: 3px;
+  background-color: #05ebac;
+  margin-top: 10px;
+  display: inline-block;
+}
+section .work .jd {
+  width: 100%;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+section .work .jd .left {
+  width: 100px;
+  padding-top: 30px;
+  float: left;
+}
+section .work .jd .left .l {
+  width: 50px;
+  float: left ;
+}
+section .work .jd .left .l p {
+  font-size: 14px;
+  color: #737473;
+}
+section .work .jd .left .r {
+  width: 50px;
+  float: left;
+  position: relative;
+}
+section .work .jd .left .r .t {
+  width: 37px;
+  height: 37px;
+  display: inline-block;
+  background: url("../img/icon2.png") -10px -3px;
+  z-index: 3;
+  position: relative;
+}
+section .work .jd .left .r .b {
+  width: 17px;
+  height: 900px;
+  border-right: 2px dashed #cccccc;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+section .work .jd .left .r .off {
+  border-radius: 37px;
+  background-color: #dafcf3;
+  background-image: none;
+}
+section .work .jd .right {
+  width: 1040px;
+  float: right;
+  border-radius: 5px;
+  box-shadow: -10px 0 10px #f3f3f3, /*左边阴影*/ 10px 0 10px #f3f3f3, /*右边阴影*/ 0 -10px 10px #f3f3f3, /*顶部阴影*/ 0 10px 10px #f3f3f3;
+  /*底边阴影*/
+}
+section .work .jd .right .t {
+  width: 940px;
+  height: 350px;
+  padding: 30px 50px 0 50px;
+}
+section .work .jd .right .t .l {
+  width: 450px;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+section .work .jd .right .t .l h3 {
+  font-size: 36px;
+  color: #737473;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+section .work .jd .right .t .l h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 20px;
+  color: #05ebac;
+  font-weight: 500;
+}
+section .work .jd .right .t .l > div {
+  width: 100%;
+  height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+section .work .jd .right .t .l > div span {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #05ebac;
+  display: inline-block;
+  float: left;
+  margin: 6px 13px 0 0;
+}
+section .work .jd .right .t .l > div p {
+  font-size: 14px;
+  color: #000000;
+}
+section .work .jd .right .t .l .off span {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #efefef;
+  display: inline-block;
+  float: left;
+  margin: 6px 13px 0 0;
+}
+section .work .jd .right .t .l .off p {
+  font-size: 14px;
+  color: #e2e2e2;
+}
+section .work .jd .right .t .r {
+  width: 490px;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+section .work .jd .right .t .r h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 20px;
+  color: #05ebac;
+  font-weight: 500;
+}
+section .work .jd .right .t .r .r-img {
+  width: 480px;
+  margin-left: 10px;
+  height: 300px;
+}
+section .work .jd .right .t .r .r-img a {
+  width: 148px;
+  height: 90px;
+  display: inline-block;
+  margin-bottom: 1.5px;
+  margin-top: 1.5px;
+  overflow: hidden;
+}
+section .work .jd .right .t .r .r-img a:nth-child(1) {
+  width: 325px;
+  height: 300px;
+  display: inline-block;
+  float: left;
+  margin-bottom: 0;
+  margin-right: 5px;
+}
+section .work .jd .right .t .r .r-img img:nth-child(3) {
+  margin-bottom: 0;
+}
+section .work .jd .right .t .r .tag_list {
+  width: 320px;
+  margin-left: 160px;
+  height: 40px;
+  float: left;
+  margin-top: 10px;
+}
+section .work .jd .right .t .r .tag_list li {
+  width: 33.3%;
+  float: left;
+  height: 100%;
+  line-height: 40px;
+}
+section .work .jd .right .t .r .tag_list li span {
+  width: 37px;
+  height: 37px;
+  display: inline-block;
+  float: left;
+  margin-right: 15px;
+}
+section .work .jd .right .t .r .tag_list li p {
+  font-size: 14px;
+  color: #000;
+}
+section .work .jd .right .t .r .tag_list .one span {
+  background: url("../img/icon2.png") -110px -3px no-repeat;
+}
+section .work .jd .right .t .r .tag_list .two span {
+  background: url("../img/icon2.png") -225px 0px no-repeat;
+}
+section .work .jd .right .t .r .tag_list .three span {
+  background: url("../img/icon2.png") -353px 0px no-repeat;
+}
+section .work .jd .right .b {
+  width: 940px;
+  min-height: 85px;
+  padding: 0 50px 0 50px;
+  border-top: 1px dashed #dadada;
+}
+section .work .jd .right .b p {
+  font-size: 14px;
+  color: rgba(28, 28, 28, 0.6);
+  width: 45%;
+  float: left;
+  line-height: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+section .work .jd .right .b p:nth-child(1) {
+  padding-right: 15px;
+  border-right: 1px solid #dadada;
+}
+section .work .jd .right .b p:nth-child(2) {
+  padding-left: 15px;
+}
+section .work .last {
+  overflow: hidden;
+}
+section .hnav {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(30, 237, 180, 0.9);
+  display: none ;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+section .hnav ul {
+  width: 100%;
+  height: 60px;
+}
+section .hnav ul li:nth-child(5) a {
+  border: none;
+}
+section .hnav ul li {
+  width: 20%;
+  float: left;
+  line-height: 60px;
+  height: 100%;
+}
+section .hnav ul li a {
+  width: 100%;
+  height: 50%;
+  margin-top: 15px;
+  display: inline-block;
+  line-height: 30px;
+  text-align: center;
+  color: #FFF;
+  font-size: 20px;
+  text-decoration: none;
+  border-right: 1px solid #FFF;
+}
+section .pingjia .title {
+  width: 100%;
+  height: 90px;
+  padding-top: 80px;
+  text-align: center;
+}
+section .pingjia .title h2 {
+  font-size: 40px;
+  color: #393939;
+  font-weight: 400;
+  text-align: center;
+}
+section .pingjia .title span {
+  width: 120px;
+  height: 3px;
+  background-color: #05ebac;
+  margin-top: 10px;
+  display: inline-block;
+}
+section .pingjia .pj {
+  width: 100%;
+  min-height: 210px;
+  margin-top: 60px;
+  border: 1px solid #d3d3d3;
+}
+section .pingjia .pj p {
+  padding: 10px;
+  text-indent: 2em;
+  font-size: 16px;
+}
+section .pingjia .tag_list {
+  width: 320px;
+  height: 40px;
+  float: right;
+  margin-top: 10px;
+}
+section .pingjia .tag_list li {
+  width: 33.3%;
+  float: left;
+  height: 100%;
+  line-height: 40px;
+}
+section .pingjia .tag_list li span {
+  width: 37px;
+  height: 37px;
+  display: inline-block;
+  float: left;
+  margin-right: 15px;
+}
+section .pingjia .tag_list li p {
+  font-size: 14px;
+  color: #000;
+}
+section .pingjia .tag_list .one span {
+  background: url("../img/icon2.png") -110px -3px no-repeat;
+}
+section .pingjia .tag_list .two span {
+  background: url("../img/icon2.png") -225px 0px no-repeat;
+}
+section .pingjia .tag_list .three span {
+  background: url("../img/icon2.png") -353px 0px no-repeat;
+}
+section #on {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  text-align: center;
+}
+section #on span {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  background: url("../img/jiantou.png") -100px 3px no-repeat;
+}
+section #on .on {
+  background: url("../img/jiantou.png") -3px 3px no-repeat;
+}
